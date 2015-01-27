@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header class="sf_header guide_header">
-		<div class="sf_header-logo"><img src="assets/logo.png" alt="Logo" width="50" height="50"></div>
+		<div class="sf_header-organisation">Simplifield</div>
 
 		<nav class="sf_header-nav">
 			<ul class="sf_header-nav-elems">
@@ -88,8 +88,8 @@
 					<div class="guide_code">
 						<pre>
 							<code class="language-html" data-lang="html">
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/button&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-default"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-default"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
 							</code>
 						</pre>
 					</div>
@@ -104,10 +104,10 @@
 					<div class="guide_code">
 						<pre>
 							<code class="language-html" data-lang="html">
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline"</span><span class="nt">&gt;</span>Outline<span class="nt">&lt;/button&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-clear"</span><span class="nt">&gt;</span>Clear<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline"</span><span class="nt">&gt;</span>Outline<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-clear"</span><span class="nt">&gt;</span>Clear<span class="nt">&lt;/button&gt;</span>
 							</code>
 						</pre>
 					</div>
@@ -324,6 +324,13 @@
 						<div><i class="ss-mail"></i></div><span>.ss-mail</span>
 					</li>
 				</ul>
+				<div class="guide_code">
+					<pre>
+						<code class="language-html" data-lang="html">
+<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ss-help"</span><span class="nt">&gt;</span><span class="nt">&lt;/i&gt;</span>
+						</code>
+					</pre>
+				</div>
 			</section>
 
 			<section id="form" class="guide_form">
@@ -354,28 +361,34 @@
 					  </div>
 						
 					  <div class="radio">
-						  <label>
-						    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-						    Option one
-						  </label>
-						</div>
-						<div class="radio">
-						  <label>
-						    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-						    Option two
-						  </label>
-						</div>
+					    <label>
+					      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+					      Option one
+					    </label>
+					  </div>
+					  <div class="radio">
+					    <label>
+					      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+					      Option two
+					    </label>
+					  </div>
 						
 					  <div class="form-group">
-							<select class="form-control">
-							  <option>1</option>
-							  <option>2</option>
-							  <option>3</option>
-							</select>
+					    <select class="form-control">
+					      <option>1</option>
+					      <option>2</option>
+					      <option>3</option>
+					    </select>
 					  </div>
 
-				  	<button type="submit" class="btn btn-primary">Submit</button>
+					  <button type="submit" class="btn btn-primary">Submit</button>
 					</form>
+				</div>
+				<div class="guide_code">
+					<pre>
+						<code class="language-html" data-lang="html">
+						</code>
+					</pre>
 				</div>
 			</section>
 
@@ -384,51 +397,57 @@
 				
 				<div class="guide_container guide_table-container">
 					<table class="table">
-			      <thead>
-			        <tr>
-			          <th></th>
-			          <th>First Name</th>
-			          <th>Last Name</th>
-			          <th class="text-right">Rapports</th>
-			          <th>Username</th>
-			          <th width="60"></th>
-			        </tr>
-			      </thead>
-			      <tbody>
-			        <tr>
-			          <th scope="row"><span class="badge badge-warning">En cours</span></th>
-			          <td><strong>Mark</strong></td>
-			          <td>Otto</td>
-			          <td class="text-right">1</td>
-			          <td>@mdo</td>
-			          <td><a href="" class="btn icon-rounded btn-primary"><span class="ss-search"></span></a></td>
-			        </tr>
-			        <tr>
-			          <th scope="row"><span class="badge badge-success">Terminées</span></th>
-			          <td><strong>Jacob</strong></td>
-			          <td>Thornton</td>
-			          <td class="text-right">107</td>
-			          <td>@fat</td>
-			          <td><a href="" class="btn icon-rounded btn-primary"><span class="ss-search"></span></a></td>
-			        </tr>
-			        <tr>
-			          <th scope="row"><span class="badge badge-danger">Brouillons</span></th>
-			          <td><strong>Larry</strong></td>
-			          <td>the Bird</td>
-			          <td class="text-right">32</td>
-			          <td>@twitter</td>
-			          <td><a href="" class="btn icon-rounded btn-primary"><span class="ss-search"></span></a></td>
-			        </tr>
-			        <tr>
-			          <th scope="row"><span class="badge badge-info">A venir</span></th>
-			          <td><strong>Jean</strong></td>
-			          <td>Flibutstier</td>
-			          <td class="text-right">8</td>
-			          <td>@simpli</td>
-			          <td><a href="" class="btn icon-rounded btn-danger"><span class="ss-deletefile"></span></a></td>
-			        </tr>
-			      </tbody>
-			    </table>
+					  <thead>
+					    <tr>
+					      <th width="100"></th>
+					      <th>First Name</th>
+					      <th>Last Name</th>
+					      <th class="text-right">Rapports</th>
+					      <th>Username</th>
+					      <th width="60"></th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr>
+					      <th scope="row"><span class="badge badge-warning">En cours</span></th>
+					      <td><strong>Mark</strong></td>
+					      <td>Otto</td>
+					      <td class="text-right">1</td>
+					      <td>@mdo</td>
+					      <td><a href="" class="btn icon-rounded btn-primary"><span class="ss-search"></span></a></td>
+					    </tr>
+					    <tr>
+					      <th scope="row"><span class="badge badge-success">Terminées</span></th>
+					      <td><strong>Jacob</strong></td>
+					      <td>Thornton</td>
+					      <td class="text-right">107</td>
+					      <td>@fat</td>
+					      <td><a href="" class="btn icon-rounded btn-primary"><span class="ss-search"></span></a></td>
+					    </tr>
+					    <tr>
+					      <th scope="row"><span class="badge badge-danger">Brouillons</span></th>
+					      <td><strong>Larry</strong></td>
+					      <td>the Bird</td>
+					      <td class="text-right">32</td>
+					      <td>@twitter</td>
+					      <td><a href="" class="btn icon-rounded btn-primary"><span class="ss-search"></span></a></td>
+					    </tr>
+					    <tr>
+					      <th scope="row"><span class="badge badge-info">A venir</span></th>
+					      <td><strong>Jean</strong></td>
+					      <td>Flibutstier</td>
+					      <td class="text-right">8</td>
+					      <td>@simpli</td>
+					      <td><a href="" class="btn icon-rounded btn-danger"><span class="ss-deletefile"></span></a></td>
+					    </tr>
+					  </tbody>
+					</table>
+			  </div>
+				<div class="guide_code">
+					<pre>
+						<code class="language-html" data-lang="html">
+						</code>
+					</pre>
 				</div>
 			</section>
 		</div>

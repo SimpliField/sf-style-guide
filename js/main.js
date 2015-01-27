@@ -27,27 +27,17 @@ jQuery(document).ready(function($){
 		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
 	});
 
-	/*******************
-		buttons
-	********************/
-	// var buttonsWrapper = $('#buttons .guide_buttons-container'),
-	// 	buttonsHtml = buttonsWrapper.html(),
-	// 	containerHtml = $('<div class="cd-box"></div>').insertAfter(buttonsWrapper),
-	// 	buttonsHtmlText = buttonsHtml.split('</button>');
+	var formWrapper = $('#form'), 
+		formContent = formWrapper.find('.guide_container'),
+		formHtml = formContent.html().toString().replace(/\t/g, '');
 
-	// $.map(buttonsHtmlText, function(value){
-	// 	if(value.indexOf('button') >= 0 ) {
-	// 		var splitText = value.split('class="'),
-	// 			block1 = splitText[0]+'class="';
-	// 			block2 = splitText[1].split('"');
-				
-	// 		var wrapperElement = $('<p></p>').text(block1),
-	// 			spanElement = $('<span></span>').text(block2[0]);
-	// 		spanElement.appendTo(wrapperElement);
-	// 		wrapperElement.appendTo(containerHtml);
-	// 		wrapperElement.append('"'+block2[1]+'&lt;/button&gt;');
-	// 	}
-	// });
+	formWrapper.find('.guide_code pre code').text(formHtml);
+
+	var tableWrapper = $('#tables'), 
+		tableContent = tableWrapper.find('.guide_container'),
+		tableHtml = tableContent.html().toString().replace(/\t/g, '');
+
+	tableWrapper.find('.guide_code pre code').text(tableHtml);
 
 	/*******************
 		typography

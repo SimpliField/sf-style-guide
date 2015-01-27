@@ -1126,7 +1126,7 @@ hr {
   margin-top: 18px;
   margin-bottom: 18px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #d9d9d9;
 }
 .sr-only {
   position: absolute;
@@ -1162,7 +1162,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: #555555;
+  color: #222222;
 }
 h1 small,
 h2 small,
@@ -1376,7 +1376,7 @@ a.bg-danger:hover {
 .page-header {
   padding-bottom: 8px;
   margin: 36px 0 18px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #d9d9d9;
 }
 ul,
 ol {
@@ -1444,7 +1444,7 @@ blockquote {
   padding: 9px 18px;
   margin: 0 0 18px;
   font-size: 16.25px;
-  border-left: 5px solid #cccccc;
+  border-left: 5px solid #d9d9d9;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -1468,7 +1468,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #cccccc;
+  border-right: 5px solid #d9d9d9;
   border-left: 0;
   text-align: right;
 }
@@ -2238,11 +2238,11 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #d9d9d9;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 2px solid #d9d9d9;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -2253,7 +2253,7 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #cccccc;
+  border-top: 2px solid #d9d9d9;
 }
 .table .table {
   background-color: #ffffff;
@@ -2267,7 +2267,7 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #cccccc;
+  border: 1px solid #d9d9d9;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -2275,7 +2275,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #cccccc;
+  border: 1px solid #d9d9d9;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -2413,7 +2413,7 @@ table th[class*="col-"] {
     margin-bottom: 13.5px;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #cccccc;
+    border: 1px solid #d9d9d9;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -2549,7 +2549,7 @@ output {
 .form-control[readonly],
 fieldset[disabled] .form-control {
   cursor: not-allowed;
-  background-color: #cccccc;
+  background-color: #d9d9d9;
   opacity: 1;
 }
 textarea.form-control {
@@ -3765,7 +3765,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #555555;
   text-align: center;
-  background-color: #cccccc;
+  background-color: #d9d9d9;
   border: 1px solid #cccccc;
   border-radius: 2px;
 }
@@ -3850,7 +3850,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #cccccc;
+  background-color: #d9d9d9;
 }
 .nav > li.disabled > a {
   color: #777777;
@@ -3865,7 +3865,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #cccccc;
+  background-color: #d9d9d9;
   border-color: #0fa4d6;
 }
 .nav .nav-divider {
@@ -3891,7 +3891,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 2px 2px 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #cccccc #cccccc #dddddd;
+  border-color: #d9d9d9 #d9d9d9 #dddddd;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
@@ -4607,7 +4607,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   color: #0a6d8f;
-  background-color: #cccccc;
+  background-color: #d9d9d9;
   border-color: #dddddd;
 }
 .pagination > .active > a,
@@ -4683,7 +4683,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #cccccc;
+  background-color: #d9d9d9;
 }
 .pager .next > a,
 .pager .next > span {
@@ -4817,7 +4817,7 @@ a.badge:focus {
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
-  background-color: #cccccc;
+  background-color: #d9d9d9;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -4829,7 +4829,7 @@ a.badge:focus {
   font-weight: 200;
 }
 .jumbotron > hr {
-  border-top-color: #b3b3b3;
+  border-top-color: #bfbfbf;
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
@@ -5119,7 +5119,7 @@ a.list-group-item:focus {
 .list-group-item.disabled,
 .list-group-item.disabled:hover,
 .list-group-item.disabled:focus {
-  background-color: #cccccc;
+  background-color: #d9d9d9;
   color: #777777;
   cursor: not-allowed;
 }
@@ -5399,7 +5399,7 @@ a.list-group-item-danger.active:focus {
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel > .table-responsive + .panel-body {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #d9d9d9;
 }
 .panel > .table > tbody:first-child > tr:first-child th,
 .panel > .table > tbody:first-child > tr:first-child td {
@@ -6578,14 +6578,16 @@ Navigation
 
 -------------------------------- */
 .sf_header {
-  background-color: #555555;
+  background-color: #0fa4d6;
   height: 50px;
+  font-size: 15px;
 }
-.sf_header-logo {
+.sf_header-organisation {
   float: left;
   display: inline-block;
-  padding: 0 40px;
-  height: 50px;
+  color: #FFF;
+  padding: 0 40px 0 10px;
+  line-height: 50px;
 }
 .sf_header-nav {
   display: inline-block;
@@ -7687,7 +7689,7 @@ Additionaly style
 
 -------------------------------- */
 .table {
-  border: 1px solid #cccccc;
+  border: 1px solid #d9d9d9;
 }
 .table thead {
   color: #777777;
@@ -7739,6 +7741,7 @@ Badges
 .guide_container {
   border: 1px solid #ddd;
   padding: 20px;
+  margin: 0;
 }
 .guide_header {
   position: fixed;
@@ -7748,6 +7751,9 @@ Badges
   left: 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   z-index: 10;
+}
+.guide_code pre {
+  padding: 10px 20px;
 }
 /* --------------------------------
 
