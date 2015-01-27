@@ -27,9 +27,15 @@ Additionaly style
 
 .form-control {
   .box-shadow(none);
+  
+  .has-success &,
+  .has-error & {
+    .box-shadow(none);
+  }
 
+  .has-success &:focus,
+  .has-error &:focus,
   &:focus {
-    border-color: @input-border-focus;
     .box-shadow(none);
   }
 }

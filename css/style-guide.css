@@ -7993,8 +7993,14 @@ Additionaly style
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.has-success .form-control,
+.has-error .form-control {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.has-success .form-control:focus,
+.has-error .form-control:focus,
 .form-control:focus {
-  border-color: #0fa4d6;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
