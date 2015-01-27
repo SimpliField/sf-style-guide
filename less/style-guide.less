@@ -1,0 +1,179 @@
+@import "./bootstrap/bootstrap.less";
+
+@import "./partials/variables";
+
+@import "./partials/fonts";
+
+@import "./partials/layout";
+
+@import "./partials/icons";
+@import "./partials/paragraphs";
+@import "./partials/buttons";
+@import "./partials/form";
+@import "./partials/tables";
+@import "./partials/components";
+
+
+.guide_title {
+  margin: 5em 0 1em;
+  text-align: center;
+}
+
+.guide_subtitle {
+  margin: 50px 0 25px;
+}
+
+.guide_container {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.guide_header {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+/* --------------------------------
+
+BRANDING
+
+-------------------------------- */
+.guide_logo {
+  padding: 40px 20px;
+  margin-bottom: 0;
+}
+
+
+/* --------------------------------
+
+COLORS
+
+-------------------------------- */
+.guide_colors-elems {
+  .guide_colors-elem {
+    text-align: center;
+
+    .guide_colors-elem-color {
+      position: relative;
+      width: 100%;
+      padding: 50% 0;
+      margin-bottom: 10px;
+
+      &:after,
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 50%;
+        height: 20%;
+      }
+      &:after {
+        right: 0;
+      }
+      &:before {
+        left: 0;
+      }
+    }
+    
+    &:nth-of-type(1) {
+      .guide_colors-elem-color {
+        background-color: @blue;
+
+        &:before {
+          background-color: @blue-light;
+        }
+        &:after {
+          background-color: @blue-dark;
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      .guide_colors-elem-color {
+        background-color: @green;
+
+        &:before {
+          background-color: @green-light;
+        }
+        &:after {
+          background-color: @green-dark;
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      .guide_colors-elem-color {
+        background-color: @red;
+
+        &:before {
+          background-color: @red-light;
+        }
+        &:after {
+          background-color: @red-dark;
+        }
+      }
+    }
+
+    &:nth-of-type(4) {
+      .guide_colors-elem-color {
+        background-color: @gray;
+
+        &:before {
+          background-color: @gray-light;
+        }
+        &:after {
+          background-color: @gray-dark;
+        }
+      }
+    }
+  } 
+}
+
+/* --------------------------------
+
+TYPOGRAPHY
+
+-------------------------------- */
+.guide_typography-container {
+  h1::before ,
+  h2::before {
+    content: 'Aa - ';
+    color: @blue;
+  }
+}
+
+
+/* --------------------------------
+
+ICONS
+
+-------------------------------- */
+.guide_buttons-icons {
+  li {
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0.8em;
+    text-align: center;
+    width: 13.33%;
+
+    i  {
+      font-size: 30px;
+    }
+  }
+}
+
+
+/* --------------------------------
+
+TABLES
+
+-------------------------------- */
+.guide_table {
+
+}

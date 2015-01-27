@@ -1,0 +1,54 @@
+/* -------------------------------- 
+
+Bootstrap
+
+-------------------------------- */
+//------ Colors
+@btn-primary-border: @blue;
+// @btn-default-color: @gray-light;
+// @btn-default-border: @gray-light;
+// @btn-default-border: @gray-light;
+@btn-success-border: @brand-success;
+@btn-danger-border: @brand-danger;
+
+//------ Size
+@padding-large-vertical: 8px;
+
+
+/* -------------------------------- 
+
+Additionaly style
+
+-------------------------------- */
+.btn.btn-outline {
+  .button-variant(@gray-light, #FFF, @btn-default-border);
+  background: none;
+  
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > .dropdown-toggle&  {
+    background: @gray;
+    border-color: @gray;
+    color: #FFF;
+  }
+}
+
+.btn.btn-clear {
+  .button-variant(@gray-light, #FFF, #FFF);
+  border: none;
+  background: none;
+  
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > .dropdown-toggle&  {
+    color: @gray;
+    border: none;
+    background: none;    
+  }
+}
