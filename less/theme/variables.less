@@ -3,23 +3,18 @@
 COLORS
 
 -------------------------------- */
-@color-contrast: 5%;
+@color-contrast: 10%;
 // Gray
 @gray-base:              #000;
-@gray-darker:            lighten(@gray-base, 13.5%); // #222
 @gray-dark:              lighten(@gray-base, 20%);   // #333
 @gray:                   lighten(@gray-base, 33.5%); // #555
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 85%); // #d9d9d9
 
-// @gray: #3E414A;				// Gray
-// @gray-light: #26272D; // Light Gray
-// @gray-dark: #D9D9DC;	// Dark Gray
-
 // Blue
-@blue: #0fa4d6; 															// Blue
-@blue-light: lighten(@blue, @color-contrast); // Light Blue
-@blue-dark: darken(@blue, @color-contrast); 	// Dark Blue
+@blue: #0fa4d6; 															   // Blue
+@blue-light: lighten(@blue, @color-contrast);    // Light Blue
+@blue-dark: darken(@blue, @color-contrast); 	   // Dark Blue
 
 // Green
 @green: #16a085; 															  // Green
@@ -27,13 +22,14 @@ COLORS
 @green-dark: darken(@green, @color-contrast); 	// Dark Green
 
 // Red
-@red: #e74c3c;                                // Red
-@red-light: lighten(@red, @color-contrast);   // Light Red
-@red-dark: darken(@red, @color-contrast);     // Dark Red
+@red: #e74c3c;                                  // Red
+@red-light: lighten(@red, @color-contrast);     // Light Red
+@red-dark: darken(@red, @color-contrast);       // Dark Red
 
 // Orange
-@orange: #f1765e;
-@orange-light: #f69c60;
+@orange: #f1765e;                               // Orange
+@orange-light: #f69c60;                         // Light Orange
+@orange-dark: darken(@orange, @color-contrast); // Dark Orange
 
 
 //--------- Bootstrap colors
@@ -42,7 +38,7 @@ COLORS
 @brand-danger: @red;
 @brand-warning: @orange;
 
-@headings-color: @gray-darker;
+@headings-color: @gray-dark;
 
 /* --------------------------------
 

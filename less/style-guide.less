@@ -116,6 +116,20 @@ COLORS
 
     &:nth-of-type(4) {
       .guide_colors-elem-color {
+        background-color: @orange;
+
+        &:before {
+          background-color: @orange-light;
+        }
+        &:after {
+          background-color: @orange-dark;
+        }
+      }
+    }
+
+
+    &:nth-of-type(6) {
+      .guide_colors-elem-color {
         background-color: @gray;
 
         &:before {
@@ -123,6 +137,16 @@ COLORS
         }
         &:after {
           background-color: @gray-dark;
+        }
+      }
+    }
+
+    &:nth-of-type(5) {
+      .guide_colors-elem-color {
+        background-color: @gray-lighter;
+
+        &:before {
+          background-color: #FFF;
         }
       }
     }
