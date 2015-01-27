@@ -2509,7 +2509,7 @@ output {
   padding-top: 7px;
   font-size: 13px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #333333;
 }
 .form-control {
   display: block;
@@ -2518,10 +2518,10 @@ output {
   padding: 6px 12px;
   font-size: 13px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #333333;
   background-color: #ffffff;
   background-image: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #d9d9d9;
   border-radius: 2px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -3763,10 +3763,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
-  color: #555555;
+  color: #333333;
   text-align: center;
   background-color: #d9d9d9;
-  border: 1px solid #cccccc;
+  border: 1px solid #d9d9d9;
   border-radius: 2px;
 }
 .input-group-addon.input-sm {
