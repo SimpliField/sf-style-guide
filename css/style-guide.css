@@ -7764,6 +7764,7 @@ h2 {
 }
 h3 {
   margin-bottom: 10px;
+  color: #777777;
 }
 p {
   font-size: 13px;
@@ -8186,7 +8187,8 @@ TYPOGRAPHY
 
 -------------------------------- */
 .guide_typography-container h1::before,
-.guide_typography-container h2::before {
+.guide_typography-container h2::before,
+.guide_typography-container h3::before {
   content: 'Aa - ';
   color: #0fa4d6;
 }

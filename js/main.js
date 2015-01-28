@@ -47,14 +47,18 @@ jQuery(document).ready(function($){
 		headingDescriptionText = heading.children('span').eq(0),
 		subTitle = typoContainer.find('h2'),
 		subTitleDescriptionText = subTitle.children('span').eq(0),
+		subsubTitle = typoContainer.find('h3'),
+		subsubTitleDescriptionText = subsubTitle.children('span').eq(0),
 		body = typoContainer.find('p'),
 		bodyDescriptionText = body.children('span').eq(0);
 		
 	setTypography(heading, headingDescriptionText);
-	setTypography(subTitle, subTitleDescriptionText);
+	setTypography(subTitle, subsubTitleDescriptionText);
+	setTypography(subsubTitle, subTitleDescriptionText);
 	setTypography(body, bodyDescriptionText);
 	$(window).on('resize', function(){
 		setTypography(heading, headingDescriptionText);
+		setTypography(subTitle, subsubTitleDescriptionText);
 		setTypography(subTitle, subTitleDescriptionText);
 		setTypography(body, bodyDescriptionText);
 	});
