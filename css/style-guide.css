@@ -7879,102 +7879,101 @@ fieldset[disabled] .btn.btn-outline.active {
   border-color: #555555;
   color: #FFF;
 }
-.btn.btn-clear {
-  color: #777777;
+.btn.btn-cancel {
+  color: #e74c3c;
   background-color: #ffffff;
   border-color: #ffffff;
   border: none;
   background: none;
 }
-.btn.btn-clear:hover,
-.btn.btn-clear:focus,
-.btn.btn-clear.focus,
-.btn.btn-clear:active,
-.btn.btn-clear.active,
-.open > .dropdown-toggle.btn.btn-clear {
-  color: #777777;
+.btn.btn-cancel:hover,
+.btn.btn-cancel:focus,
+.btn.btn-cancel.focus,
+.btn.btn-cancel:active,
+.btn.btn-cancel.active,
+.open > .dropdown-toggle.btn.btn-cancel {
+  color: #e74c3c;
   background-color: #e6e6e6;
   border-color: #e0e0e0;
 }
-.btn.btn-clear:active,
-.btn.btn-clear.active,
-.open > .dropdown-toggle.btn.btn-clear {
+.btn.btn-cancel:active,
+.btn.btn-cancel.active,
+.open > .dropdown-toggle.btn.btn-cancel {
   background-image: none;
 }
-.btn.btn-clear.disabled,
-.btn.btn-clear[disabled],
-fieldset[disabled] .btn.btn-clear,
-.btn.btn-clear.disabled:hover,
-.btn.btn-clear[disabled]:hover,
-fieldset[disabled] .btn.btn-clear:hover,
-.btn.btn-clear.disabled:focus,
-.btn.btn-clear[disabled]:focus,
-fieldset[disabled] .btn.btn-clear:focus,
-.btn.btn-clear.disabled.focus,
-.btn.btn-clear[disabled].focus,
-fieldset[disabled] .btn.btn-clear.focus,
-.btn.btn-clear.disabled:active,
-.btn.btn-clear[disabled]:active,
-fieldset[disabled] .btn.btn-clear:active,
-.btn.btn-clear.disabled.active,
-.btn.btn-clear[disabled].active,
-fieldset[disabled] .btn.btn-clear.active {
+.btn.btn-cancel.disabled,
+.btn.btn-cancel[disabled],
+fieldset[disabled] .btn.btn-cancel,
+.btn.btn-cancel.disabled:hover,
+.btn.btn-cancel[disabled]:hover,
+fieldset[disabled] .btn.btn-cancel:hover,
+.btn.btn-cancel.disabled:focus,
+.btn.btn-cancel[disabled]:focus,
+fieldset[disabled] .btn.btn-cancel:focus,
+.btn.btn-cancel.disabled.focus,
+.btn.btn-cancel[disabled].focus,
+fieldset[disabled] .btn.btn-cancel.focus,
+.btn.btn-cancel.disabled:active,
+.btn.btn-cancel[disabled]:active,
+fieldset[disabled] .btn.btn-cancel:active,
+.btn.btn-cancel.disabled.active,
+.btn.btn-cancel[disabled].active,
+fieldset[disabled] .btn.btn-cancel.active {
   background-color: #ffffff;
   border-color: #ffffff;
 }
-.btn.btn-clear .badge {
+.btn.btn-cancel .badge {
   color: #ffffff;
-  background-color: #777777;
+  background-color: #e74c3c;
 }
-.btn.btn-clear:hover,
-.btn.btn-clear:focus,
-.btn.btn-clear.focus,
-.btn.btn-clear:active,
-.btn.btn-clear.active,
-.open > .dropdown-toggle.btn.btn-clear {
-  color: #777777;
+.btn.btn-cancel:hover,
+.btn.btn-cancel:focus,
+.btn.btn-cancel.focus,
+.btn.btn-cancel:active,
+.btn.btn-cancel.active,
+.open > .dropdown-toggle.btn.btn-cancel {
+  color: #e74c3c;
   background-color: #e6e6e6;
   border-color: #e6e6e6;
 }
-.btn.btn-clear:active,
-.btn.btn-clear.active,
-.open > .dropdown-toggle.btn.btn-clear {
+.btn.btn-cancel:active,
+.btn.btn-cancel.active,
+.open > .dropdown-toggle.btn.btn-cancel {
   background-image: none;
 }
-.btn.btn-clear.disabled,
-.btn.btn-clear[disabled],
-fieldset[disabled] .btn.btn-clear,
-.btn.btn-clear.disabled:hover,
-.btn.btn-clear[disabled]:hover,
-fieldset[disabled] .btn.btn-clear:hover,
-.btn.btn-clear.disabled:focus,
-.btn.btn-clear[disabled]:focus,
-fieldset[disabled] .btn.btn-clear:focus,
-.btn.btn-clear.disabled.focus,
-.btn.btn-clear[disabled].focus,
-fieldset[disabled] .btn.btn-clear.focus,
-.btn.btn-clear.disabled:active,
-.btn.btn-clear[disabled]:active,
-fieldset[disabled] .btn.btn-clear:active,
-.btn.btn-clear.disabled.active,
-.btn.btn-clear[disabled].active,
-fieldset[disabled] .btn.btn-clear.active {
+.btn.btn-cancel.disabled,
+.btn.btn-cancel[disabled],
+fieldset[disabled] .btn.btn-cancel,
+.btn.btn-cancel.disabled:hover,
+.btn.btn-cancel[disabled]:hover,
+fieldset[disabled] .btn.btn-cancel:hover,
+.btn.btn-cancel.disabled:focus,
+.btn.btn-cancel[disabled]:focus,
+fieldset[disabled] .btn.btn-cancel:focus,
+.btn.btn-cancel.disabled.focus,
+.btn.btn-cancel[disabled].focus,
+fieldset[disabled] .btn.btn-cancel.focus,
+.btn.btn-cancel.disabled:active,
+.btn.btn-cancel[disabled]:active,
+fieldset[disabled] .btn.btn-cancel:active,
+.btn.btn-cancel.disabled.active,
+.btn.btn-cancel[disabled].active,
+fieldset[disabled] .btn.btn-cancel.active {
   background-color: #ffffff;
   border-color: #ffffff;
 }
-.btn.btn-clear .badge {
+.btn.btn-cancel .badge {
   color: #ffffff;
-  background-color: #777777;
+  background-color: #e74c3c;
 }
-.btn.btn-clear:hover,
-.btn.btn-clear:focus,
-.btn.btn-clear.focus,
-.btn.btn-clear:active,
-.btn.btn-clear.active,
-.open > .dropdown-toggle.btn.btn-clear {
-  color: #555555;
+.btn.btn-cancel:hover,
+.btn.btn-cancel:focus,
+.btn.btn-cancel.focus,
+.btn.btn-cancel:active,
+.btn.btn-cancel.active,
+.open > .dropdown-toggle.btn.btn-cancel {
   border: none;
-  background: none;
+  background: none!important;
 }
 /* -------------------------------- 
 

@@ -76,8 +76,8 @@ Additionaly style
   }
 }
 
-.btn.btn-clear {
-  .button-variant(@gray-light, #FFF, #FFF);
+.btn.btn-cancel {
+  .button-variant(@btn-danger-bg; @body-bg; @body-bg);
   border: none;
   background: none;
   
@@ -87,8 +87,7 @@ Additionaly style
   &:active,
   &.active,
   .open > .dropdown-toggle&  {
-    color: @gray;
     border: none;
-    background: none;    
+    background: none!important;    
   }
 }
