@@ -1,17 +1,6 @@
 @import "./bootstrap/bootstrap.less";
 
-@import "./partials/variables";
-
-@import "./partials/fonts";
-
-@import "./partials/layout";
-
-@import "./partials/icons";
-@import "./partials/paragraphs";
-@import "./partials/buttons";
-@import "./partials/form";
-@import "./partials/tables";
-@import "./partials/components";
+@import "./theme/simplifield";
 
 
 .guide_title {
@@ -26,6 +15,7 @@
 .guide_container {
   border: 1px solid #ddd;
   padding: 20px;
+  margin: 0;
 }
 
 .guide_header {
@@ -37,6 +27,11 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
+.guide_code {
+  pre {
+    padding: 10px 20px;
+  }
+}
 
 /* --------------------------------
 
@@ -44,7 +39,7 @@ BRANDING
 
 -------------------------------- */
 .guide_logo {
-  padding: 40px 20px;
+  padding: 20px;
   margin-bottom: 0;
 }
 
@@ -121,6 +116,20 @@ COLORS
 
     &:nth-of-type(4) {
       .guide_colors-elem-color {
+        background-color: @orange;
+
+        &:before {
+          background-color: @orange-light;
+        }
+        &:after {
+          background-color: @orange-dark;
+        }
+      }
+    }
+
+
+    &:nth-of-type(6) {
+      .guide_colors-elem-color {
         background-color: @gray;
 
         &:before {
@@ -128,6 +137,16 @@ COLORS
         }
         &:after {
           background-color: @gray-dark;
+        }
+      }
+    }
+
+    &:nth-of-type(5) {
+      .guide_colors-elem-color {
+        background-color: @gray-lighter;
+
+        &:before {
+          background-color: #FFF;
         }
       }
     }
@@ -141,7 +160,8 @@ TYPOGRAPHY
 -------------------------------- */
 .guide_typography-container {
   h1::before ,
-  h2::before {
+  h2::before ,
+  h3::before {
     content: 'Aa - ';
     color: @blue;
   }

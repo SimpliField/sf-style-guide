@@ -1,0 +1,72 @@
+/* -------------------------------- 
+
+Bootstrap
+  
+-------------------------------- */
+// color
+@input-color: @gray-dark;
+@input-border: @gray-lighter;
+@input-border-focus: @brand-primary;
+@state-danger-text: @red;
+@state-danger-border: @red;
+@state-success-text: @green;
+@state-success-border: @green;
+
+// Size
+@input-height-base: 40px;
+
+/* -------------------------------- 
+
+Custom
+
+-------------------------------- */
+// Help
+.help-block {
+  color: @gray-light;
+  font-size: @font-size-small;
+}
+
+// Label
+label {
+  font-weight: normal;
+}
+.control-label {
+  padding-top: 12px;
+}
+
+// Inputs
+.form-control {
+  .box-shadow(none);
+  
+  .has-success &,
+  .has-error & {
+    .box-shadow(none);
+  }
+
+  .has-success &:focus,
+  .has-error &:focus,
+  &:focus {
+    .box-shadow(none);
+  }
+}
+
+// Select
+select {
+  -webkit-appearance : none !important;
+  -moz-appearance : none !important;
+  &:focus {
+    outline : 0;
+  }
+}
+.sf_input-select {
+  position: relative;
+
+  .caret {
+    position: absolute;
+    z-index: 10;
+    right: 8px;
+    top: 50%;
+    color: @gray-dark;
+    margin-top: -1.5px;
+  }
+}
