@@ -40,10 +40,23 @@ Custom
   }
 }
 
+// Select
 select {
   -webkit-appearance : none !important;
   -moz-appearance : none !important;
   &:focus {
     outline : 0;
+  }
+}
+.sf_input-select {
+  position: relative;
+
+  .caret {
+    position: absolute;
+    z-index: 10;
+    right: 8px;
+    top: 50%;
+    color: @gray-dark;
+    margin-top: -1.5px;
   }
 }

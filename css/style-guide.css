@@ -8011,6 +8011,17 @@ select {
 select:focus {
   outline: 0;
 }
+.sf_input-select {
+  position: relative;
+}
+.sf_input-select .caret {
+  position: absolute;
+  z-index: 10;
+  right: 8px;
+  top: 50%;
+  color: #333333;
+  margin-top: -1.5px;
+}
 /* -------------------------------- 
 
 Bootstrap
