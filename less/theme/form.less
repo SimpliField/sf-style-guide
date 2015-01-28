@@ -1,7 +1,7 @@
 /* -------------------------------- 
 
 Bootstrap
-
+  
 -------------------------------- */
 // color
 @input-color: @gray-dark;
@@ -17,7 +17,7 @@ Bootstrap
 
 /* -------------------------------- 
 
-Additionaly style
+Custom
 
 -------------------------------- */
 .help-block {
@@ -37,5 +37,13 @@ Additionaly style
   .has-error &:focus,
   &:focus {
     .box-shadow(none);
+  }
+}
+
+select {
+  -webkit-appearance : none !important;
+  -moz-appearance : none !important;
+  &:focus {
+    outline : 0;
   }
 }

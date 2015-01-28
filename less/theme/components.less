@@ -1,29 +1,21 @@
 /* -------------------------------- 
 
-Badges
+Labels
 
 -------------------------------- */
 //------ Colors
-@badge-bg: transparent;
-@state-success-bg: @green-light;
-@state-info-bg: @blue-light;
-@state-warning-bg: @orange-light;
-@state-danger-bg: @red-light;
+@label-success-bg: @green-light;
+@label-info-bg: @blue-light;
+@label-warning-bg: @orange-light;
+@label-danger-bg: @red-light;
 
 //------ Size
+@label-border-radius: 10px;
+@label-font-size-ratio: 85%;
 
 //  Custom
-.badge {
-  &.badge-success {
-    background: @state-success-bg;
-  }
-  &.badge-info {
-    background: @state-info-bg;
-  }
-  &.badge-warning {
-    background: @state-warning-bg;
-  }
-  &.badge-danger {
-    background: @state-danger-bg;
-  }
+.label {
+  border-radius: @label-border-radius;
+  font-size: @label-font-size-ratio;
+  padding: .2em .6em;
 }

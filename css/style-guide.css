@@ -4981,32 +4981,32 @@ a.label:focus {
   background-color: #0c7fa6;
 }
 .label-success {
-  background-color: #16a085;
+  background-color: #1ccdaa;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #107360;
+  background-color: #16a085;
 }
 .label-info {
-  background-color: #5bc0de;
+  background-color: #28bef0;
 }
 .label-info[href]:hover,
 .label-info[href]:focus {
-  background-color: #31b0d5;
+  background-color: #0fa4d6;
 }
 .label-warning {
-  background-color: #f1765e;
+  background-color: #f69c60;
 }
 .label-warning[href]:hover,
 .label-warning[href]:focus {
-  background-color: #ed4e2f;
+  background-color: #f37e30;
 }
 .label-danger {
-  background-color: #e74c3c;
+  background-color: #ed7669;
 }
 .label-danger[href]:hover,
 .label-danger[href]:focus {
-  background-color: #d62c1a;
+  background-color: #e74c3c;
 }
 .badge {
   display: inline-block;
@@ -5019,7 +5019,7 @@ a.label:focus {
   vertical-align: baseline;
   white-space: nowrap;
   text-align: center;
-  background-color: transparent;
+  background-color: #777777;
   border-radius: 10px;
 }
 .badge:empty {
@@ -7740,31 +7740,31 @@ Navigation
   -moz-osx-font-smoothing: grayscale;
   content: '\e044';
 }
+/* -------------------------------- 
+
+Bootstrap
+  
+-------------------------------- */
 /* --------------------------------
 
-Title
+Custom
 
 -------------------------------- */
-h1 {
-  font-weight: normal;
-  margin: 0;
-  margin-bottom: 20px;
-}
-h2 {
-  font-weight: normal;
-  margin: 0;
-  margin-bottom: 15px;
-}
+h1,
+h2,
 h3 {
   font-weight: normal;
   margin: 0;
+}
+h1 {
+  margin-bottom: 20px;
+}
+h2 {
+  margin-bottom: 15px;
+}
+h3 {
   margin-bottom: 10px;
 }
-/* --------------------------------
-
-Common text
-
--------------------------------- */
 p {
   font-size: 13px;
   margin-bottom: 9px;
@@ -7978,11 +7978,11 @@ fieldset[disabled] .btn.btn-clear.active {
 /* -------------------------------- 
 
 Bootstrap
-
+  
 -------------------------------- */
 /* -------------------------------- 
 
-Additionaly style
+Custom
 
 -------------------------------- */
 .help-block {
@@ -8003,6 +8003,13 @@ Additionaly style
 .form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+select {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+select:focus {
+  outline: 0;
 }
 /* -------------------------------- 
 
@@ -8042,20 +8049,13 @@ Additionaly style
 }
 /* -------------------------------- 
 
-Badges
+Labels
 
 -------------------------------- */
-.badge.badge-success {
-  background: #1ccdaa;
-}
-.badge.badge-info {
-  background: #28bef0;
-}
-.badge.badge-warning {
-  background: #f69c60;
-}
-.badge.badge-danger {
-  background: #ed7669;
+.label {
+  border-radius: 10px;
+  font-size: 85%;
+  padding: .2em .6em;
 }
 .guide_title {
   margin: 5em 0 1em;
