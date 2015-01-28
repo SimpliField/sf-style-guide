@@ -2506,7 +2506,7 @@ input[type="checkbox"]:focus {
 }
 output {
   display: block;
-  padding-top: 7px;
+  padding-top: 10px;
   font-size: 13px;
   line-height: 1.42857143;
   color: #333333;
@@ -2515,7 +2515,7 @@ output {
   display: block;
   width: 100%;
   height: 40px;
-  padding: 6px 12px;
+  padding: 9px 12px;
   font-size: 13px;
   line-height: 1.42857143;
   color: #333333;
@@ -2583,7 +2583,7 @@ input[type="search"] {
   .input-group-lg input[type="time"],
   .input-group-lg input[type="datetime-local"],
   .input-group-lg input[type="month"] {
-    line-height: 36px;
+    line-height: 46px;
   }
 }
 .form-group {
@@ -2651,8 +2651,8 @@ fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
 .form-control-static {
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 0;
 }
 .form-control-static.input-lg,
@@ -2697,38 +2697,38 @@ select[multiple].form-group-sm .form-control {
   line-height: 1.5;
 }
 .input-lg {
-  height: 36px;
-  padding: 8px 16px;
+  height: 46px;
+  padding: 13px 16px;
   font-size: 13px;
   line-height: 1.3333333;
   border-radius: 2px;
 }
 select.input-lg {
-  height: 36px;
-  line-height: 36px;
+  height: 46px;
+  line-height: 46px;
 }
 textarea.input-lg,
 select[multiple].input-lg {
   height: auto;
 }
 .form-group-lg .form-control {
-  height: 36px;
-  padding: 8px 16px;
+  height: 46px;
+  padding: 13px 16px;
   font-size: 13px;
   line-height: 1.3333333;
   border-radius: 2px;
 }
 select.form-group-lg .form-control {
-  height: 36px;
-  line-height: 36px;
+  height: 46px;
+  line-height: 46px;
 }
 textarea.form-group-lg .form-control,
 select[multiple].form-group-lg .form-control {
   height: auto;
 }
 .form-group-lg .form-control-static {
-  height: 36px;
-  padding: 8px 16px;
+  height: 46px;
+  padding: 13px 16px;
   font-size: 13px;
   line-height: 1.3333333;
 }
@@ -2751,9 +2751,9 @@ select[multiple].form-group-lg .form-control {
   pointer-events: none;
 }
 .input-lg + .form-control-feedback {
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
 }
 .input-sm + .form-control-feedback {
   width: 28px;
@@ -2918,11 +2918,11 @@ select[multiple].form-group-lg .form-control {
 .form-horizontal .checkbox-inline {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 7px;
+  padding-top: 10px;
 }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 25px;
+  min-height: 28px;
 }
 .form-horizontal .form-group {
   margin-left: -15px;
@@ -2932,7 +2932,7 @@ select[multiple].form-group-lg .form-control {
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
-    padding-top: 7px;
+    padding-top: 10px;
   }
 }
 .form-horizontal .has-feedback .form-control-feedback {
@@ -2940,7 +2940,7 @@ select[multiple].form-group-lg .form-control {
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
-    padding-top: 11.6666664px;
+    padding-top: 18.3333329px;
   }
 }
 @media (min-width: 768px) {
@@ -2959,7 +2959,7 @@ select[multiple].form-group-lg .form-control {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
+  padding: 9px 12px;
   font-size: 13px;
   line-height: 1.42857143;
   border-radius: 2px;
@@ -3546,7 +3546,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 8px 16px;
+  padding: 13px 16px;
   font-size: 13px;
   line-height: 1.3333333;
   border-radius: 2px;
@@ -3939,8 +3939,8 @@ tbody.collapse.in {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 36px;
-  padding: 8px 16px;
+  height: 46px;
+  padding: 13px 16px;
   font-size: 13px;
   line-height: 1.3333333;
   border-radius: 2px;
@@ -3948,8 +3948,8 @@ tbody.collapse.in {
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 36px;
-  line-height: 36px;
+  height: 46px;
+  line-height: 46px;
 }
 textarea.input-group-lg > .form-control,
 textarea.input-group-lg > .input-group-addon,
@@ -3999,7 +3999,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   vertical-align: middle;
 }
 .input-group-addon {
-  padding: 6px 12px;
+  padding: 9px 12px;
   font-size: 13px;
   font-weight: normal;
   line-height: 1;
@@ -4015,7 +4015,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 3px;
 }
 .input-group-addon.input-lg {
-  padding: 8px 16px;
+  padding: 13px 16px;
   font-size: 13px;
   border-radius: 2px;
 }
@@ -4823,7 +4823,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span {
   position: relative;
   float: left;
-  padding: 6px 12px;
+  padding: 9px 12px;
   line-height: 1.42857143;
   text-decoration: none;
   color: #0fa4d6;
@@ -4875,7 +4875,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 8px 16px;
+  padding: 13px 16px;
   font-size: 13px;
 }
 .pagination-lg > li:first-child > a,
@@ -7989,6 +7989,12 @@ Custom
 .help-block {
   color: #777777;
   font-size: 11px;
+}
+label {
+  font-weight: normal;
+}
+.control-label {
+  padding-top: 12px;
 }
 .form-control {
   -webkit-box-shadow: none;
