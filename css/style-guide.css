@@ -8066,6 +8066,12 @@ Additionaly style
   vertical-align: middle;
   border-bottom: none;
 }
+.table-hover .btn.icon-rounded {
+  display: none;
+}
+.table-hover tr:hover .btn.icon-rounded {
+  display: block;
+}
 /* -------------------------------- 
 
 Labels
