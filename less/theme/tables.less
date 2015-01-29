@@ -4,7 +4,7 @@ Bootstrap
 
 -------------------------------- */
 //------ Colors
-@table-border-color: @gray-lighter;
+@table-border-color: @border-color-base;
 
 
 //------ Size
@@ -50,6 +50,19 @@ Additionaly style
     vertical-align: middle;
     border-bottom: none;
   }
+}
 
-
+// Add hover styles
+.table-hover {
+  // Hide actions icon
+  .btn.icon-rounded {
+    display: none;
+  }
+  
+  // Display on row hover
+  tr:hover {
+    .btn.icon-rounded {
+      display: block;
+    }    
+  }
 }
