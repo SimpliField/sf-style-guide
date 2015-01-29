@@ -1325,10 +1325,10 @@ a.text-success:hover {
   color: #107360;
 }
 .text-info {
-  color: #31708f;
+  color: #ffffff;
 }
 a.text-info:hover {
-  color: #245269;
+  color: #e6e6e6;
 }
 .text-warning {
   color: #8a6d3b;
@@ -3258,8 +3258,8 @@ fieldset[disabled] .btn-success.active {
 }
 .btn-info {
   color: #ffffff;
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #28bef0;
+  border-color: #11b6ee;
 }
 .btn-info:hover,
 .btn-info:focus,
@@ -3268,8 +3268,8 @@ fieldset[disabled] .btn-success.active {
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #ffffff;
-  background-color: #31b0d5;
-  border-color: #269abc;
+  background-color: #0fa4d6;
+  border-color: #0d8ab5;
 }
 .btn-info:active,
 .btn-info.active,
@@ -3294,11 +3294,11 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #28bef0;
+  border-color: #11b6ee;
 }
 .btn-info .badge {
-  color: #5bc0de;
+  color: #28bef0;
   background-color: #ffffff;
 }
 .btn-info:hover,
@@ -3308,8 +3308,8 @@ fieldset[disabled] .btn-info.active {
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   color: #ffffff;
-  background-color: #31b0d5;
-  border-color: #28a1c5;
+  background-color: #0fa4d6;
+  border-color: #0d92be;
 }
 .btn-info:active,
 .btn-info.active,
@@ -3334,11 +3334,11 @@ fieldset[disabled] .btn-info:active,
 .btn-info.disabled.active,
 .btn-info[disabled].active,
 fieldset[disabled] .btn-info.active {
-  background-color: #5bc0de;
-  border-color: #46b8da;
+  background-color: #28bef0;
+  border-color: #11b6ee;
 }
 .btn-info .badge {
-  color: #5bc0de;
+  color: #28bef0;
   background-color: #ffffff;
 }
 .btn-warning {
@@ -4005,7 +4005,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #333333;
   text-align: center;
-  background-color: #d9d9d9;
+  background-color: none;
   border: 1px solid #d9d9d9;
   border-radius: 2px;
 }
@@ -5163,13 +5163,13 @@ a.thumbnail.active {
 .alert-info {
   background-color: #28bef0;
   border-color: #10d2e4;
-  color: #31708f;
+  color: #ffffff;
 }
 .alert-info hr {
   border-top-color: #0ebccc;
 }
 .alert-info .alert-link {
-  color: #245269;
+  color: #e6e6e6;
 }
 .alert-warning {
   background-color: #f69c60;
@@ -5255,7 +5255,7 @@ a.thumbnail.active {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 .progress-bar-info {
-  background-color: #5bc0de;
+  background-color: #28bef0;
 }
 .progress-striped .progress-bar-info {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5420,26 +5420,26 @@ a.list-group-item-success.active:focus {
   border-color: #16a085;
 }
 .list-group-item-info {
-  color: #31708f;
+  color: #ffffff;
   background-color: #28bef0;
 }
 a.list-group-item-info {
-  color: #31708f;
+  color: #ffffff;
 }
 a.list-group-item-info .list-group-item-heading {
   color: inherit;
 }
 a.list-group-item-info:hover,
 a.list-group-item-info:focus {
-  color: #31708f;
+  color: #ffffff;
   background-color: #11b6ee;
 }
 a.list-group-item-info.active,
 a.list-group-item-info.active:hover,
 a.list-group-item-info.active:focus {
   color: #fff;
-  background-color: #31708f;
-  border-color: #31708f;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 .list-group-item-warning {
   color: #8a6d3b;
@@ -5782,7 +5782,7 @@ a.list-group-item-danger.active:focus {
   border-color: #10d2e4;
 }
 .panel-info > .panel-heading {
-  color: #31708f;
+  color: #ffffff;
   background-color: #28bef0;
   border-color: #10d2e4;
 }
@@ -5791,7 +5791,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-info > .panel-heading .badge {
   color: #28bef0;
-  background-color: #31708f;
+  background-color: #ffffff;
 }
 .panel-info > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #10d2e4;
@@ -6772,6 +6772,11 @@ button.close {
 /* --------------------------------
 
 COLORS
+
+-------------------------------- */
+/* --------------------------------
+
+STYLE
 
 -------------------------------- */
 /* --------------------------------
@@ -8018,6 +8023,12 @@ select:focus {
   top: 50%;
   color: #333333;
   margin-top: -1.5px;
+}
+.input-group-addon + .form-control {
+  border-left: none;
+}
+.input-group-addon + .form-control:focus {
+  border-color: #d9d9d9;
 }
 /* -------------------------------- 
 
