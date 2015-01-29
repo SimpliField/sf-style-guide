@@ -5,12 +5,14 @@ Bootstrap
 -------------------------------- */
 // color
 @input-color: @gray-dark;
-@input-border: @gray-lighter;
+@input-border: @border-color-base;
 @input-border-focus: @brand-primary;
 @state-danger-text: @red;
 @state-danger-border: @red;
 @state-success-text: @green;
 @state-success-border: @green;
+// addon
+@input-group-addon-bg: none;
 
 // Size
 @input-height-base: 40px;
@@ -68,5 +70,14 @@ select {
     top: 50%;
     color: @gray-dark;
     margin-top: -1.5px;
+  }
+}
+
+// Addon
+.input-group-addon + .form-control{
+  border-left: none;
+
+  &:focus {
+    border-color: @input-border;
   }
 }
