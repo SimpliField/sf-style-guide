@@ -6824,7 +6824,7 @@ Navigation
 -------------------------------- */
 .sf_header {
   background-color: #0fa4d6;
-  height: 50px;
+  height: 40px;
   font-size: 15px;
 }
 .sf_header-organisation {
@@ -6832,14 +6832,14 @@ Navigation
   display: inline-block;
   color: #FFF;
   padding: 0 40px 0 10px;
-  line-height: 50px;
+  line-height: 40px;
 }
 .sf_header-nav {
   display: inline-block;
 }
 .sf_header-nav .sf_header-nav-elems {
   display: table;
-  height: 50px;
+  height: 40px;
   padding: 0 2em;
   text-align: left;
 }
@@ -8110,7 +8110,6 @@ Additionaly style
 }
 .guide_header {
   position: fixed;
-  height: 50px;
   width: 100%;
   top: 0;
   left: 0;
