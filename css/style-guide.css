@@ -8096,6 +8096,9 @@ Additionaly style
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.panel-light {
+  background-color: #fafafa;
+}
 .guide_title {
   margin: 5em 0 1em;
   text-align: center;

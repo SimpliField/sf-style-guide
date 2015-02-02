@@ -4,13 +4,14 @@ Bootstrap
 
 -------------------------------- */
 //------ Colors
-@table-border-color: @border-color-base;
-
+@panel-inner-border:  @border-color-base;
+@panel-footer-bg:     @gray-clearer;
+// Default
+@panel-default-border:        @border-color-base;
+@panel-default-heading-bg:    @gray-darker;
 
 //------ Size
-@table-height: 50px;
-@table-cell-padding: 8px 10px;
-
+@panel-border-radius: 0;
 
 /* -------------------------------- 
 
@@ -19,4 +20,8 @@ Additionaly style
 -------------------------------- */
 .panel {
   .box-shadow(none);
+}
+
+.panel-light {
+  background-color: @gray-clearer;
 }
