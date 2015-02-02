@@ -8096,6 +8096,9 @@ Additionaly style
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.panel-light {
+  background-color: #fafafa;
+}
 .guide_title {
   margin: 5em 0 1em;
   text-align: center;
@@ -8202,10 +8205,13 @@ COLORS
   background-color: #333333;
 }
 .guide_colors-elems .guide_colors-elem:nth-of-type(5) .guide_colors-elem-color {
-  background-color: #d9d9d9;
+  background-color: #fafafa;
 }
 .guide_colors-elems .guide_colors-elem:nth-of-type(5) .guide_colors-elem-color:before {
   background-color: #FFF;
+}
+.guide_colors-elems .guide_colors-elem:nth-of-type(5) .guide_colors-elem-color:after {
+  background-color: #d9d9d9;
 }
 /* --------------------------------
 
