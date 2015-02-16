@@ -57,6 +57,12 @@ Bootstrap
 Additionaly style
 
 -------------------------------- */
+.btn {
+  &:active,
+  &.active {
+    .box-shadow(none);
+  }
+}
 .btn.btn-outline {
   .button-variant(@gray-light, #FFF, @btn-default-border);
   background: none;
