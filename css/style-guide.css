@@ -7745,6 +7745,45 @@ Navigation
   -moz-osx-font-smoothing: grayscale;
   content: '\e044';
 }
+.ss-piechart:before {
+  font-family: 'iconsfont';
+  speak: none;
+  font-size: 135%;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e045';
+}
+.ss-textchat:before {
+  font-family: 'iconsfont';
+  speak: none;
+  font-size: 135%;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e046';
+}
+.ss-searchfile:before {
+  font-family: 'iconsfont';
+  speak: none;
+  font-size: 135%;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e047';
+}
 /* -------------------------------- 
 
 Bootstrap
