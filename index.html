@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style-guide.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
+
 	<title>Style Guide | Simplifield</title>
 </head>
 <body>
@@ -23,6 +23,7 @@
 				<li class="sf_header-nav-elem"><a href="#icons">Icons</a></li>
 				<li class="sf_header-nav-elem"><a href="#form">Form</a></li>
 				<li class="sf_header-nav-elem"><a href="#tables">Tables</a></li>
+				<li class="sf_header-nav-elem"><a href="#bem">BEM</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -73,7 +74,7 @@
 					<li class="guide_colors-elem col-sm-2">
 						<div class="guide_colors-elem-color"></div>
 					</li>
-					
+
 					<li class="guide_colors-elem col-sm-2">
 						<div class="guide_colors-elem-color"></div>
 					</li>
@@ -366,7 +367,7 @@
 
 			<section id="form" class="guide_form row">
 				<h2 class="guide_subtitle col-sm-12">Form</h2>
-				
+
 				<div class="col-sm-12">
 					<div class="guide_container guide_form-container row">
 						<form class="form-horizontal">
@@ -400,7 +401,7 @@
 						      <p class="help-block">Example error block</p>
 						    </div>
 						  </div>
-							
+
 						  <div class="form-group">
 						    <label class="col-sm-3 control-label" for="exampleSelect">Option</label>
 						    <div class="col-sm-8">
@@ -414,7 +415,7 @@
 						      </div>
 						    </div>
 						  </div>
-						  
+
 						  <div class="form-group">
 						    <div class="col-sm-offset-3 col-sm-8">
 						      <div class="checkbox">
@@ -422,7 +423,7 @@
 						          <input type="checkbox"> Check me out
 						        </label>
 						      </div>
-							    
+
 						      <div class="radio">
 						        <label>
 						          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -453,7 +454,7 @@
 
 			<section id="tables" class="guide_table">
 				<h2 class="guide_subtitle">Tables</h2>
-				
+
 				<div class="guide_container guide_table-container">
 					<table class="table table-hover">
 					  <thead>
@@ -507,6 +508,45 @@
 						<code class="language-html" data-lang="html">
 						</code>
 					</pre>
+				</div>
+			</section>
+
+			<section id="bem" class="guide_table">
+				<h2 class="guide_subtitle">BEM</h2>
+				<div class="guide_container guide_bem-container">
+					<p>
+						At SimpliField we like to use the <stong>BEM methodology</stong> for writing our CSS.
+					</p>
+					<p>
+						We will not explain here the pros and the cons, others already did that way better than we could.
+						Ask Google!
+					</p>
+					<p>
+						We have however some little tweaks to share.
+					</p>
+
+					<h4>First: About hyphens and underscores</h4>
+					<p>
+						The main difference between hypens (-) and underscores (_) is their behaviour when you double clicking the word that contains it.
+						They also have a really different behaviour to alt+right / alt+left in text editors.
+						Try it by yourself on these words.
+					</p>
+					<pre>
+foofoofoo___foofoo__foo_bar
+bar---bar--bar-bar-baz
+toto__tata-tata__toto</pre>
+					<p>
+						With this in my we will build our class names like the following :
+					</p>
+					<pre>
+.block__element--modifier</pre>
+					<p>
+						We like to have the classes we build namespaced, for ease of use we use one underscore to sufix it.
+						Now it is easy to copy paste.
+					</p>
+					<pre>
+.namespace_block__element--modifier
+.sf_results__tab--active</pre>
 				</div>
 			</section>
 		</div>
