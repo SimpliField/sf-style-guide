@@ -548,6 +548,22 @@ toto__tata-tata__toto</pre>
 .namespace_block__element--modifier
 .sf_results__tab--active</pre>
 				</div>
+
+				<h3 class="guide_subtitle">Less Syntax for BEM</h3>
+<pre>
+// sf_block
+.sf_block__element {
+  .btn;
+  .icon-rounded;
+}
+[class^='sf_block__element'] {
+  &:extend(.sf_block__element);
+}
+.sf_block__element--modifier{
+  .someModsProps;
+  color: red;
+}
+</pre>
 			</section>
 		</div>
 	</main>
