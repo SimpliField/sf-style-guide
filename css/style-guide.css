@@ -2547,7 +2547,7 @@ output {
   font-size: 15px;
   line-height: 1.42857143;
   color: #475f6c;
-  background-color: #fff;
+  background-color: #f3f6f9;
   background-image: none;
   border: 1px solid #beccd9;
   border-radius: 3px;
@@ -4131,7 +4131,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   color: #475f6c;
   text-align: center;
-  background-color: #fff;
+  background-color: #f3f6f9;
   border: 1px solid #beccd9;
   border-radius: 3px;
 }
@@ -7508,6 +7508,11 @@ label {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+/*---------------------
+
+Select
+
+---------------------*/
 select {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
@@ -7555,6 +7560,134 @@ select:focus {
 }
 .input-group-addon + .form-control:focus {
   border-color: #beccd9;
+}
+/*---------------------
+
+Toggle
+
+---------------------*/
+.toggle {
+  border: 1px solid;
+  border-color: #beccd9;
+  background: #fff;
+  padding: 2px;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(207, 218, 228, 0.3);
+  font-family: 'Montserrat', sans-serif !important;
+}
+.toggle .option {
+  max-height: 25px;
+  line-height: 25px;
+  padding: 0 12px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  border-width: 0;
+  background: initial;
+  color: #3fabc5;
+  font-size: 11px;
+}
+.toggle .option.active {
+  background: #3fabc5;
+  color: #fff;
+}
+.toggle.toggle-rounded {
+  border-radius: 25px;
+}
+.toggle.toggle-rounded .option {
+  border-radius: 25px;
+}
+.toggle-small .toggle,
+.toggle.toggle-small {
+  padding: 1px;
+}
+.toggle-small .toggle .option,
+.toggle.toggle-small .option {
+  font-size: 12px;
+  max-height: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+}
+.yes-no-item .toggle .btn:focus {
+  outline: none;
+}
+.yes-no-item .toggle .btn:last-of-type.active {
+  background-color: #A7BACB;
+}
+.yes-no-item label {
+  margin-top: 5px!important;
+  width: calc(100% - 110px);
+}
+.range input {
+  display: block;
+  overflow: hidden;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-right: 2px;
+  padding-left: 1px;
+  width: auto;
+  height: 43px;
+  outline: none;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ccc), color-stop(100%, #ccc));
+  background: linear-gradient(to right, #ccc 0%, #ccc 100%);
+  background-position: center;
+  background-size: 99% 2px;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+}
+.range input::-webkit-slider-thumb {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: 0;
+}
+.range input::-webkit-slider-thumb:before {
+  /* what creates the colorful line on the left side of the slider */
+  position: absolute;
+  top: 13px;
+  left: -2001px;
+  width: 2000px;
+  height: 2px;
+  background: $dark;
+  content: ' ';
+}
+.range input::-webkit-slider-thumb:after {
+  /* create a larger (but hidden) hit area */
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  padding: 30px;
+  content: ' ';
+}
+.range input::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 11px 0 16px;
+  color: transparent;
+  margin-top: 20px;
+}
+.range input::-ms-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  margin-left: 1px;
+  margin-right: 1px;
+  outline: none;
+}
+.range input::-ms-fill-lower {
+  height: 2px;
+  background: $dark;
+}
+.range input::-ms-fill-upper {
+  height: 2px;
+  background: #ccc;
 }
 /* --------------------------------
 
