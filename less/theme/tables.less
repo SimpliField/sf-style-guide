@@ -1,18 +1,44 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Bootstrap
 
 -------------------------------- */
 //------ Colors
 @table-border-color: @border-color-base;
+@table-box-shadow: 0 1px 0 rgba(207, 218, 228, 0.3);
+@table-border-radius: @border-radius-base;
+// head
+@table-head-bg: @background-color;
+@table-head-color: @stable;
+@table-head-height: 35px;
+@table-head-padding: 5px 10px;
+@table-head-font-size: 13px;
+// Cell
+@table-cell-bg: @background-color;
+@table-cell-height: @table-head-height + 15px;
+@table-cell-padding: 10px;
+@table-cell-hover-bg: @positive;
+@table-cell-hover-color: @light;
+// Footer
+@table-footer-height: @table-head-height + 5px;
+// Tools
+@tools-padding: @default-padding;
+// Pagination
+@pagination-color: fade(@dark, 60);
+@pagination-border: transparent;
+@pagination-disabled-border: @pagination-border;
+@pagination-width: 30px;
+@pagination-height: @pagination-width;
+@pagination-border-radius: @border-radius-base;
+@pagination-active-bg: @stable;
+@pagination-active-border: @pagination-active-bg;
+@pagination-disabled-color: fade(@dark, 30);
+@pagination-hover-bg: transparent;
+@pagination-hover-color: @dark;
+@pagination-hover-border: transparent;
 
 
-//------ Size
-@table-height: 50px;
-@table-cell-padding: 8px 10px;
-
-
-/* -------------------------------- 
+/* --------------------------------
 
 Additionaly style
 
@@ -20,49 +46,115 @@ Additionaly style
 
 .table {
   border: 1px solid @table-border-color;
+  box-shadow: @table-box-shadow;
+  border-radius: @table-border-radius;
+  border-collapse: initial;
 
   thead {
-    color: @gray-light;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    font-weight: bold;
+    background-color: @table-head-bg;
+    color: @table-head-color;
   }
 
-  tbody {
-    color: @gray;
-    font-size: @font-size-base;
+  tbody tr {
+    &:nth-child(2n) {
+      background-color: fade(@background-color, 60%);
+    }
+    &:hover {
+      background-color: @table-cell-hover-bg;
+      color: @table-cell-hover-color;
+    }
+  }
+
+  tfoot {
+    background-color: @table-head-bg;
+    color: @table-head-color;
   }
 
   // Cells
-  > thead,
-  > tbody,
-  > tfoot {
-    > tr {
-      > th,
-      > td {
-        height: @table-height;
-        vertical-align: middle;
-      }
+  > thead > tr > th {
+    height: @table-head-height;
+    border-bottom: none;
+  }
+
+  > thead > tr > th ,
+  > tfoot > tr > td {
+    vertical-align: middle;
+    padding: @table-head-padding;
+    font-weight: bold;
+    font-size: @table-head-font-size;
+  }
+  > tbody > tr > td {
+    height: @table-cell-height;
+    vertical-align: middle;
+  }
+  > tfoot > tr > td {
+    height: @table-footer-height;
+    text-align: right;
+  }
+
+  .table-action {
+    padding: 3px;
+    display: none;
+    text-decoration: none;
+    height: auto;
+    color: @light;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+
+    &.table-action-danger {
+      color: @assertive
+    }
+    &.table-action-warning {
+      color: @royal
+    }
+    &:hover {
+      opacity: 1;
     }
   }
-  // Bottom align for column headings
-  > thead > tr > th {
-    vertical-align: middle;
-    border-bottom: none;
+
+  // Display on row hover
+  tr:hover .table-action {
+    display: block;
   }
 }
 
-// Add hover styles
-.table-hover {
-  // Hide actions icon
-  .btn.icon-rounded {
-    display: none;
+/* --------------------------------
+
+Pagination
+
+-------------------------------- */
+.pagination {
+  float: right;
+  margin: 0; // overwrite bootstrap
+
+  > li {
+    > a,
+    > span {
+      padding: 0;
+      height: @pagination-height;
+      line-height: @pagination-height - 1px;
+      width: @pagination-width;
+      text-align: center;
+      border-radius: @pagination-border-radius;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
   }
-  
-  // Display on row hover
-  tr:hover {
-    .btn.icon-rounded {
-      display: block;
-    }    
+}
+
+/* --------------------------------
+
+Tools
+
+-------------------------------- */
+.sf_table__tools {
+  padding-bottom: @tools-padding;
+  padding-top: @tools-padding;
+  float: left;
+  width: 100%;
+
+  .pagination {
+    float: right;
+    margin: 5px 0;
   }
 }

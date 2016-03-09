@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style-guide.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-  	
+
 	<title>Style Guide | Simplifield</title>
 </head>
 <body>
@@ -23,6 +23,7 @@
 				<li class="sf_header-nav-elem"><a href="#icons">Icons</a></li>
 				<li class="sf_header-nav-elem"><a href="#form">Form</a></li>
 				<li class="sf_header-nav-elem"><a href="#tables">Tables</a></li>
+				<li class="sf_header-nav-elem"><a href="#empty">Empty</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -73,10 +74,6 @@
 					<li class="guide_colors-elem col-sm-2">
 						<div class="guide_colors-elem-color"></div>
 					</li>
-					
-					<li class="guide_colors-elem col-sm-2">
-						<div class="guide_colors-elem-color"></div>
-					</li>
 				</ul>
 			</section>
 
@@ -117,6 +114,7 @@
 						<div class="guide_buttons-buttons">
 							<button class="btn btn-primary">Primary</button>
 							<button class="btn btn-success">Success</button>
+							<button class="btn btn-primary btn-rounded">Rounded</button>
 							<button class="btn btn-outline">Outline</button>
 							<button class="btn btn-link">link button</button>
 							<button class="btn btn-cancel">Cancel</button>
@@ -127,6 +125,7 @@
 							<code class="language-html" data-lang="html">
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-rounded"</span><span class="nt">&gt;</span>Rounded<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline"</span><span class="nt">&gt;</span>Outline<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>link button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-cancel"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
@@ -354,6 +353,39 @@
 					<li>
 						<div><i class="ss-searchfile"></i></div><span>.ss-searchfile</span>
 					</li>
+					<li>
+						<div><i class="ss-clock"></i></div><span>.ss-clock</span>
+					</li>
+					<li>
+						<div><i class="ss-sort"></i></div><span>.ss-sort</span>
+					</li>
+					<li>
+						<div><i class="ss-sort-asc"></i></div><span>.ss-sort-asc</span>
+					</li>
+					<li>
+						<div><i class="ss-sort-desc"></i></div><span>.ss-sort-desc</span>
+					</li>
+					<li>
+						<div><i class="ss-angle-down"></i></div><span>.ss-angle-down</span>
+					</li>
+					<li>
+						<div><i class="ss-lock"></i></div><span>.ss-lock</span>
+					</li>
+					<li>
+						<div><i class="ss-bill"></i></div><span>.ss-bill</span>
+					</li>
+					<li>
+						<div><i class="ss-two-ways"></i></div><span>.ss-two-ways</span>
+					</li>
+					<li>
+						<div><i class="ss-chain-broken"></i></div><span>.ss-chain-broken</span>
+					</li>
+					<li>
+						<div><i class="ss-link"></i></div><span>.ss-link</span>
+					</li>
+					<li>
+						<div><i class="ss-italic"></i></div><span>.ss-italic</span>
+					</li>
 				</ul>
 				<div class="guide_code">
 					<pre>
@@ -366,7 +398,7 @@
 
 			<section id="form" class="guide_form row">
 				<h2 class="guide_subtitle col-sm-12">Form</h2>
-				
+
 				<div class="col-sm-12">
 					<div class="guide_container guide_form-container row">
 						<form class="form-horizontal">
@@ -400,21 +432,20 @@
 						      <p class="help-block">Example error block</p>
 						    </div>
 						  </div>
-							
+
 						  <div class="form-group">
 						    <label class="col-sm-3 control-label" for="exampleSelect">Option</label>
 						    <div class="col-sm-8">
-						      <div class="sf_input-select">
+						      <div class="form-select">
 							      <select class="form-control" id="exampleSelect">
 							        <option>1</option>
 							        <option>2</option>
 							        <option>3</option>
 							      </select>
-							      <span class="caret"></span>
 						      </div>
 						    </div>
 						  </div>
-						  
+
 						  <div class="form-group">
 						    <div class="col-sm-offset-3 col-sm-8">
 						      <div class="checkbox">
@@ -422,7 +453,7 @@
 						          <input type="checkbox"> Check me out
 						        </label>
 						      </div>
-							    
+
 						      <div class="radio">
 						        <label>
 						          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
@@ -453,8 +484,33 @@
 
 			<section id="tables" class="guide_table">
 				<h2 class="guide_subtitle">Tables</h2>
-				
+
 				<div class="guide_container guide_table-container">
+					<div class="sf_table__tools">
+				    <ul class="pagination">
+				  		<li class="pagination-prev disabled"><a href="">&lt;</a></li>
+				  		<li class="pagination-page active"><a href="">1</a></li>
+				  		<li class="pagination-page"><a href="">2</a></li>
+				  		<li class="pagination-next"><a href="">&gt;</a></li>
+						</ul>
+
+				    <div dropdown class="item item-light action-select pull-left">
+				      <div class="dropdown-toggle form-select">
+								Colonnes
+				      </div>
+
+				      <ul class="dropdown-menu">
+			          <li class="sf_table__columnPickerItem">
+		              <label for="FORM_FIRST_NAME_HEADER" title="Titre">First Name</label>
+		              <input type="checkbox" id="FORM_FIRST_NAME_HEADER" class="sf_table__columnPickerItemCheckbox">
+			          </li>
+			          <li class="sf_table__columnPickerItem">
+		              <label for="FORM_LAST_NAME_HEADER" title="Titre">Last Name</label>
+		              <input type="checkbox" id="FORM_LAST_NAME_HEADER" class="sf_table__columnPickerItemCheckbox">
+			          </li>
+			        </ul>
+				    </div>
+				  </div>
 					<table class="table table-hover">
 					  <thead>
 					    <tr>
@@ -473,7 +529,7 @@
 					      <td>Otto</td>
 					      <td class="text-right">1</td>
 					      <td>@mdo</td>
-					      <td><a href="" class="btn icon-rounded btn-primary"><span class="ss-search"></span></a></td>
+					      <td><a href="" class="table-action"><span class="ss-search"></span></a></td>
 					    </tr>
 					    <tr>
 					      <td><span class="label label-success">Terminées</span></td>
@@ -481,7 +537,7 @@
 					      <td>Thornton</td>
 					      <td class="text-right">107</td>
 					      <td>@fat</td>
-					      <td><a href="" class="btn icon-rounded btn-primary"><span class="ss-search"></span></a></td>
+					      <td><a href="" class="table-action"><span class="ss-search"></span></a></td>
 					    </tr>
 					    <tr>
 					      <td><span class="label label-danger">Brouillons</span></td>
@@ -489,7 +545,7 @@
 					      <td>the Bird</td>
 					      <td class="text-right">32</td>
 					      <td>@twitter</td>
-					      <td><a href="" class="btn icon-rounded btn-primary"><span class="ss-search"></span></a></td>
+					      <td><a href="" class="table-action"><span class="ss-search"></span></a></td>
 					    </tr>
 					    <tr>
 					      <td><span class="label label-info">A venir</span></td>
@@ -497,10 +553,46 @@
 					      <td>Flibutstier</td>
 					      <td class="text-right">8</td>
 					      <td>@simpli</td>
-					      <td><a href="" class="btn icon-rounded btn-danger"><span class="ss-remove"></span></a></td>
+					      <td><a href="" class="table-action table-action-danger"><span class="ss-remove"></span></a></td>
 					    </tr>
 					  </tbody>
+						<tfoot>
+		          <tr>
+		            <td colspan="6">
+		              <strong class="ng-binding">Totaux : 1</strong>
+		            </td>
+		          </tr>
+		        </tfoot>
 					</table>
+			  </div>
+				<div class="guide_code">
+					<pre>
+						<code class="language-html" data-lang="html">
+						</code>
+					</pre>
+				</div>
+			</section>
+			</section>
+
+			<section id="empty" class="guide_empty">
+				<h2 class="guide_subtitle">Empty</h2>
+
+				<div class="guide_container guide_empty-container back-bg">
+					<div class="sf_empty">
+						<div class="sf_empty-circle circle circle-tall circle-light">
+							<span class="sf_empty-badge badge badge-dark">0</span>
+							<i class="sf_empty-icon ss-list"></i>
+						</div>
+						<h2 class="sf_empty-title dark">
+							Your dashboard is empty
+						</h2>
+						<p class="sf_empty-desc gray">
+							You need to get some element in your dashboard for displaying
+						</p>
+						<button class="sf_empty-button btn btn-large btn-primary">
+							Add an widget
+						</button>
+					</div>
 			  </div>
 				<div class="guide_code">
 					<pre>

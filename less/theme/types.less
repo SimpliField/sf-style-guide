@@ -1,0 +1,68 @@
+// Colors
+// -------------------------
+.light     { color: @light }
+.stable    { color: @stable }
+.positive  { color: @positive }
+.calm      { color: @calm }
+.balanced  { color: @balanced }
+.energized { color: @energized }
+.assertive { color: @assertive }
+.royal     { color: @royal }
+.dark      { color: @dark }
+.gray      { color: @gray }
+// Background
+// -------------------------
+.light-bg     { background-color: @light }
+.stable-bg    { background-color: @stable }
+.positive-bg  { background-color: @positive }
+.calm-bg      { background-color: @calm }
+.balanced-bg  { background-color: @balanced }
+.energized-bg { background-color: @energized }
+.assertive-bg { background-color: @assertive }
+.royal-bg     { background-color: @royal }
+.dark-bg      { background-color: @dark }
+.bar-dark-bg  { background-color: @bar-back }
+.back-bg      { background-color: @background-color }
+
+.padding {
+  padding: @content-padding;
+}
+.padding-vertical {
+  padding-top: @content-padding;
+  padding-bottom: @content-padding;
+}
+.padding-horizontal {
+  padding-left: @content-padding;
+  padding-right: @content-padding;
+}
+.padding-top    { padding-top: @content-padding; }
+.padding-bottom { padding-bottom: @content-padding; }
+.padding-left   { padding-left: @content-padding; }
+.padding-right  { padding-right: @content-padding; }
+
+.clear { clear: both; }
+
+// Text
+.text-left    { text-align: left; }
+.text-right   { text-align: right; }
+.text-center  { text-align: center; }
+.text-uppercase  {
+  font-size: @font-size-small;
+  font-weight: 400;
+  font-family: @font-type-second;
+  letter-spacing: 1px;
+}
+
+// Helpers
+.disabled-click {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
+}
+.all-screen {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}

@@ -1,25 +1,78 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Labels
 
 -------------------------------- */
-//------ Colors
-@label-success-bg: @green-light;
-@label-info-bg: @blue-light;
-@label-warning-bg: @orange-light;
-@label-danger-bg: @red-light;
-
-//------ Size
-@label-border-radius: 10px;
-@label-font-size-ratio: 85%;
-
-//  Custom
 .label {
   border-radius: @label-border-radius;
-  font-size: @label-font-size-ratio;
   padding: .3em .8em;
 
   .btn-label {
     margin-left: 3px;
+  }
+}
+
+/*----------------
+
+      CIRCLE
+
+----------------*/
+.circle(@size: @circle-size) {
+  height: @size;
+  width: @size;
+  line-height: @size;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+}
+.circle {
+  .circle();
+
+  &.circle-dark {
+    background: @dark;
+    color: #FFF;
+  }
+  &.circle-light {
+    background: @light;
+    color: @stable;
+    border: 1px solid #b2bfcc;
+  }
+  &.circle-balanced {
+    background: @balanced;
+    color: #FFF;
+  }
+  &.circle-gray {
+    background: @gray;
+    color: #FFF;
+  }
+  &.circle-positive {
+    background: @positive;
+    color: #FFF;
+  }
+  &.circle-outline-dark {
+    border: 1px solid @dark;
+    color: @dark;
+  }
+  &.circle-darkened {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &.circle-tall {
+    height: @circle-size-tall;
+    width: @circle-size-tall;
+    line-height: @circle-size-tall + 10;
+  }
+
+  &.circle-tall {
+    .circle(@circle-size-tall);
+
+    &.circle-outline-balanced {
+      border: 2px solid @balanced;
+      color: @balanced;
+    }
+  }
+  // Size
+  &.circle-small {
+    .circle(@circle-size-small);
   }
 }

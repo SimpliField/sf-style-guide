@@ -1,30 +1,39 @@
-/* -------------------------------- 
+/*---------------------
 
-Bootstrap
-  
--------------------------------- */
-// color
-@input-color: @gray-dark;
-@input-border: @border-color-base;
-@input-border-focus: @brand-primary;
-@state-danger-text: @red;
-@state-danger-border: @red;
-@state-success-text: @green;
-@state-success-border: @green;
-// addon
-@input-group-addon-bg: @input-bg;
+Inputs
 
-// Size
-@input-height-base: 40px;
+---------------------*/
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  background-color: @input-bg;
+  border: @input-border;
+  color: @stable;
+  box-shadow: @input-box-shadow;
+  padding: @input-padding;
+  border-radius: @input-border-radius;
+}
 
-/* -------------------------------- 
+/* --------------------------------
 
 Custom
 
 -------------------------------- */
 // Help
 .help-block {
-  color: @gray-light;
+  color: @stable;
   font-size: @font-size-small;
 }
 
@@ -39,7 +48,7 @@ label {
 // Inputs
 .form-control {
   .box-shadow(none);
-  
+
   .has-success &,
   .has-error & {
     .box-shadow(none);
@@ -52,7 +61,11 @@ label {
   }
 }
 
-// Select
+/*---------------------
+
+Select
+
+---------------------*/
 select {
   -webkit-appearance : none !important;
   -moz-appearance : none !important;
@@ -60,16 +73,30 @@ select {
     outline : 0;
   }
 }
-.sf_input-select {
-  position: relative;
 
-  .caret {
+.sf_input-select,
+.form-select {
+  position: relative;
+  &:before {
     position: absolute;
     z-index: 10;
-    right: 8px;
-    top: 50%;
-    color: @gray-dark;
-    margin-top: -1.5px;
+    right: 10px;
+    top: 10px;
+    color: @stable;
+    .icon('\eA06');
+  }
+}
+.dropdown-toggle {
+  font-family: @font-type-second;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-left: @content-padding;
+  padding-right: @content-padding + 10px;
+
+  &.form-select:before,
+  &.sf_input-select:before {
+    top: 1px;
+    right: 0;
   }
 }
 
@@ -79,5 +106,70 @@ select {
 
   &:focus {
     border-color: @input-border;
+  }
+}
+
+/*---------------------
+
+Toggle
+
+---------------------*/
+.toggle {
+  border: 1px solid;
+  border-color: @toggle-default-border-color;
+  background: @toggle-default-bg;
+  padding: @toggle-padding;
+  border-radius: @toggle-border-radius;
+  box-shadow: @item-light-box-shadow;
+  font-family: @font-type-second;
+
+  .option {
+    max-height: @toggle-height;
+    line-height: @toggle-height;
+    padding: 0 @toggle-option-padding;
+    border-radius: @toggle-border-radius;
+    text-transform: uppercase;
+    border-width: 0;
+    background: initial;
+    color: @toggle-default-color;
+    font-size: @toggle-font-size;
+
+    &.active {
+      background: @toggle-default-active-bg;
+      color: @toggle-default-active-color;
+    }
+  }
+  &.toggle-rounded {
+    border-radius: @toggle-rounded-border-radius;
+    .option {
+      border-radius: @toggle-rounded-border-radius;
+    }
+  }
+}
+
+.toggle-small .toggle,
+.toggle.toggle-small {
+  padding: @toggle-small-padding;
+
+  .option {
+    font-size: @toggle-small-font-size;
+    max-height: @toggle-small-height;
+    line-height: @toggle-small-height;
+    padding: @toggle-small-option-padding;
+  }
+}
+.yes-no-item {
+  .toggle .btn {
+    &:focus {
+      outline: none;
+    }
+    &:last-of-type.active {
+      background-color: #A7BACB;
+    }
+  }
+
+  label {
+    margin-top: 5px!important;
+    width: calc(~"100% - 110px");
   }
 }
