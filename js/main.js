@@ -27,50 +27,38 @@ jQuery(document).ready(function($){
 		$('<b>'+actual.css("background-color")+'</b>').insertAfter(actual);
 	});
 
-	var formWrapper = $('#form'), 
-		formContent = formWrapper.find('.guide_container'),
-		formHtml = formContent.html().toString().replace(/\t/g, '');
+	copyCodeExample('#form');
+	copyCodeExample('#tables');
+	copyCodeExample('#empty');
 
-	formWrapper.find('.guide_code pre code').text(formHtml);
+	function copyCodeExample(id) {
+		var wrapper = $(id);
+		var content = wrapper.find('.guide_container');
+		var html = content.html().toString().replace(/\t/g, '');
 
-	var tableWrapper = $('#tables'), 
-		tableContent = tableWrapper.find('.guide_container'),
-		tableHtml = tableContent.html().toString().replace(/\t/g, '');
-
-	tableWrapper.find('.guide_code pre code').text(tableHtml);
+		wrapper.find('.guide_code pre code').text(html);
+	}
 
 	/*******************
 		typography
 	********************/
-	var typoContainer = $('.guide_typography-container')
-		heading = typoContainer.find('h1'),
-		headingDescriptionText = heading.children('span').eq(0),
-		subTitle = typoContainer.find('h2'),
-		subTitleDescriptionText = subTitle.children('span').eq(0),
-		subsubTitle = typoContainer.find('h3'),
-		subsubTitleDescriptionText = subsubTitle.children('span').eq(0),
-		h4 = typoContainer.find('h4'),
-		h4DescriptionText = h4.children('span').eq(0),
-		h5 = typoContainer.find('h5'),
-		h5DescriptionText = h5.children('span').eq(0),
-		body = typoContainer.find('p'),
-		bodyDescriptionText = body.children('span').eq(0);
-	
-	setTypography(heading, headingDescriptionText);
-	setTypography(subTitle, subsubTitleDescriptionText);
-	setTypography(subsubTitle, subTitleDescriptionText);
-	setTypography(h4, h4DescriptionText);
-	setTypography(h5, h5DescriptionText);
-	setTypography(body, bodyDescriptionText);
+	var typeElements = ['h1', 'h2', 'h3', 'h4', 'h5', 'p'];
+	var typoContainer = $('.guide_typography-container');
+
+	setTypoForAll();
+
 	$(window).on('resize', function(){
-		setTypography(heading, headingDescriptionText);
-		setTypography(subTitle, subsubTitleDescriptionText);
-		setTypography(subTitle, subTitleDescriptionText);
-		setTypography(h4, h4DescriptionText);
-		setTypography(h5, h5DescriptionText);
-		setTypography(body, bodyDescriptionText);
+		setTypoForAll();
 	});
 
+	function setTypoForAll() {
+		typeElements.forEach(function setTypoForElem(elem) {
+			var $elem = typoContainer.find(elem);
+			var textElem = $elem.children('span').eq(0);
+
+			setTypography($elem, textElem);
+		});
+	}
 	function setTypography(element, textElement) {
 		var fontSize = Math.round(element.css('font-size').replace('px',''))+'px',
 			fontFamily = (element.css('font-family').split(','))[0].replace(/\'/g, '').replace(/\"/g, ''),
@@ -89,7 +77,7 @@ jQuery(document).ready(function($){
         var target= $(this.hash),
         	topMargin = target.css('marginTop').replace('px', ''),
         	hedearHeight = $('header').height();
-        $('body,html').animate({'scrollTop': parseInt(target.offset().top - hedearHeight - topMargin)}, 200); 
+        $('body,html').animate({'scrollTop': parseInt(target.offset().top - hedearHeight - topMargin)}, 200);
     });
     //update selected navigation element
     $(window).on('scroll', function(){
@@ -102,7 +90,7 @@ jQuery(document).ready(function($){
 				actualHeight = actual.height(),
 				topMargin = actual.css('marginTop').replace('px', ''),
 				actualAnchor = $('.cd-main-nav').find('a[href="#'+actual.attr('id')+'"]');
-			
+
 			if ( ( parseInt(actual.offset().top - $('.cd-main-nav').height() - topMargin )<= $(window).scrollTop() ) && ( parseInt(actual.offset().top +  actualHeight - topMargin )  > $(window).scrollTop() +1 ) ) {
 				actualAnchor.addClass('selected');
 			}else {

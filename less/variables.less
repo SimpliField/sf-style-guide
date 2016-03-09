@@ -24,22 +24,18 @@ COLORS
 @border-color:          #beccd9;
 
 // Old variables
-@gray-light:             lighten(@gray, 46.7%); // #777
-@blue: @positive; 															   // Blue
-@blue-light: lighten(@blue, 10%);    // Light Blue
-@green: @balanced; 															  // Green
-@green-dark: @balanced-dark; 	                  // Dark Green
-@red: @assertive;                 // Red
-@red-dark: @assertive-dark;       // Dark Red
-@orange: @royal;
+@blue:       @positive;
+@green:      @balanced;
+@green-dark: @balanced-dark;
+@red:      @assertive;
+@red-dark: @assertive-dark;
 
 //--------- Bootstrap colors
 // Common
 @brand-primary: @blue;
 @brand-success: @green;
 @brand-danger: @red;
-@brand-warning: @orange;
-@brand-info: @blue-light;
+@brand-warning: @royal;
 
 // Text
 @text-color: @dark;
@@ -48,15 +44,12 @@ COLORS
 // Background
 @state-success-bg: @green;
 @state-info-bg: @blue;
-@state-warning-bg: @orange;
+@state-warning-bg: @royal;
 @state-danger-bg: @assertive;
 
 
-/* --------------------------------
-
-FONTS
-
--------------------------------- */
+// Fonts
+// -------------------------
 @AvenirPath:        '../fonts/avenir';
 @AvenirVersion:     '1.0.0';
 @MontserratPath:    '../fonts/Montserrat';
@@ -149,3 +142,28 @@ FONTS
 @item-balanced-text:   			@balanced;
 @item-balanced-border: 			@balanced;
 @item-balanced-box-shadow: 	0 1px 0 rgba(21, 130, 156, 0.2);
+
+// Empty
+// -------------------------
+@empty-icon-size: 45px;
+@empty-badge-height: 20px;
+@empty-title-margin: @content-padding + 10;
+@empty-bottom-margin: @content-padding;
+
+// Components
+// -------------------------
+// Circle
+@circle-size:       35px;
+@circle-size-tall:  100px;
+@circle-size-small: 30px;
+
+//Labels
+@label-success-bg: @green;
+@label-info-bg: @blue;
+@label-warning-bg: @royal;
+@label-danger-bg: @red;
+@label-border-radius: 3px;
+
+// Badge
+@badge-bg: @dark;
+@badge-color: @light;
