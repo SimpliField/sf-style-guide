@@ -1,0 +1,142 @@
+.item {
+  .item-style(@item-default-bg, @item-default-border, @item-default-text, @item-default-box-shadow);
+
+  position: relative;
+  display:  block;
+
+  padding:  @item-padding;
+
+  border-width:   @item-border-width;
+  border-style:   solid;
+  font-size:      @item-font-size;
+  line-height:    @item-font-size + 4;
+  font-weight:    @item-font-weight;
+  border-radius:  @item-border-radius;
+
+  // Different themes for items
+  &.item-light {
+    .item-style(@item-light-bg, @item-light-border, @item-light-text, @item-light-box-shadow);
+    .item-hover-style(@item-light-hover-bg, @item-light-hover-border, @item-light-hover-text);
+  }
+  &.item-calm {
+    .item-style(@item-calm-bg, @item-calm-border, @item-calm-text, @item-calm-box-shadow);
+  }
+  &.item-positive {
+    .item-style(@item-positive-bg, @item-positive-border, @item-positive-text, @item-positive-box-shadow);
+  }
+  &.item-assertive {
+    .item-style(@item-assertive-bg, @item-assertive-border, @item-assertive-text, @item-assertive-box-shadow);
+  }
+  &.item-balanced {
+    .item-style(@item-balanced-bg, @item-balanced-border, @item-balanced-text, @item-balanced-box-shadow);
+  }
+  // Different size for items
+  &.item-medium {
+    font-size:    @item-medium-font-size;
+    line-height:  @item-medium-font-size;
+    padding:      @item-medium-padding;
+  }
+  &.item-small {
+    font-size:    @item-small-font-size;
+    line-height:  @item-small-font-size;
+    padding:      @item-small-padding;
+  }
+  &.item-error {
+    margin-top: -2px;
+    border-width: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    font-size: @font-size-small;
+  }
+
+  &[ng-click]:hover {
+    cursor: pointer;
+  }
+
+  h2 {
+    margin: 0 0 2px 0;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .item-labels {
+    position: absolute;
+    top: @item-labels-padding;
+    right: @item-labels-padding;
+
+    &:before {
+      content: '';
+      width: 50px;
+      height: 100%;
+      position: absolute;
+      left: -50px;
+      top: 0;
+    }
+
+    .item-label {
+      font-family: @item-label-font-type;
+      font-size:   @item-label-font-size;
+      font-weight: 400;
+      text-transform: uppercase;
+      border-radius: @item-label-border-radius;
+      padding: @item-label-padding;
+      color: @item-label-color;
+
+      &.item-label-light {
+        border: 1px solid @positive;
+        color: @positive;
+        background-color: @light;
+      }
+      &.item-label-stable {
+        border: 1px solid @stable;
+        color: @stable;
+        background-color: @background-color;
+      }
+    }
+  }
+}
+
+.list-borderless .item,
+.item-borderless {
+  border-width: 0;
+}
+.list-paddingless .item,
+.item-paddingless {
+  padding: 0;
+}
+
+
+.item-input {
+  input,
+  .range input,
+  textarea {
+    width: 100%;
+  }
+}
+
+.item-style(@bg-color; @border-color; @color; @box-shadow) {
+  border-color: @border-color;
+  background-color: @bg-color;
+  color: @color;
+  box-shadow: @box-shadow;
+
+  .item-labels {
+    background-color: @bg-color;
+    &:before {
+      background: linear-gradient(90deg, transparent 0%, @bg-color 80%, @bg-color 100%);
+    }
+  }
+}
+.item-hover-style(@bg-color; @border-color; @color) {
+  &:hover {
+    border-color: @border-color;
+    background-color: @bg-color;
+    color: @color;
+  }
+}
+
+.item-note {
+  float: right;
+  color: @stable;
+  font-size: 13px;
+}

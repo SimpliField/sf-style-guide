@@ -1,0 +1,31 @@
+.sf_empty {
+  text-align: center;
+  padding-top: 40px;
+
+  &.panel {
+    padding-top: inherit;
+  }
+  .sf_empty-circle {
+    position: relative;
+    padding-top: 5px; // Fix centering
+    margin-bottom: @empty-title-margin;
+  }
+  .sf_empty-badge {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: @empty-badge-height;
+    line-height: 1.3em;
+  }
+  .sf_empty-icon {
+    font-size: @empty-icon-size;
+  }
+  .sf_empty-desc {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .sf_empty-button {
+    margin-top: @empty-bottom-margin;
+  }
+}
