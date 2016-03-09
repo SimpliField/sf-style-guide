@@ -7,7 +7,7 @@ Bootstrap
 @input-color: @gray-dark;
 @input-border: @border-color-base;
 @input-border-focus: @brand-primary;
-@state-danger-text: @red;
+@state-danger-text: @assertive;
 @state-danger-border: @red;
 @state-success-text: @green;
 @state-success-border: @green;
@@ -24,7 +24,7 @@ Custom
 -------------------------------- */
 // Help
 .help-block {
-  color: @gray-light;
+  color: @stable;
   font-size: @font-size-small;
 }
 
@@ -60,17 +60,30 @@ select {
     outline : 0;
   }
 }
-.sf_input-select {
-  position: relative;
 
-  .caret {
+.sf_input-select,
+.form-select {
+  position: relative;
+  &:before {
     position: absolute;
     z-index: 10;
-    right: 8px;
-    top: 50%;
-    color: @gray-dark;
-    margin-top: -1.5px;
-    pointer-events: none;
+    right: 10px;
+    top: 10px;
+    color: @stable;
+    .icon('\eA06');
+  }
+}
+.dropdown-toggle {
+  font-family: @font-type-second;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-left: @content-padding;
+  padding-right: @content-padding + 10px;
+
+  &.form-select:before,
+  &.sf_input-select:before {
+    top: 1px;
+    right: 0;
   }
 }
 

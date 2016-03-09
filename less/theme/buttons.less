@@ -1,16 +1,8 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Bootstrap
 
 -------------------------------- */
-//------ Colors
-@btn-primary-border: @blue;
-@btn-success-border: @brand-success;
-@btn-danger-border: @brand-danger;
-
-//------ Size
-@padding-large-vertical: 13px;
-
 //  Mixin
 .button-variant(@color; @background; @border) {
   color: @color;
@@ -52,21 +44,29 @@ Bootstrap
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Additionaly style
 
 -------------------------------- */
 .btn {
+  height: @btn-height;
+  padding: @btn-padding;
+
   &:active,
   &.active {
     .box-shadow(none);
   }
+
+  &.btn-lg {
+    height: inherit;
+    padding: @btn-large-padding;
+  }
 }
 .btn.btn-outline {
-  .button-variant(@gray-light, #FFF, @btn-default-border);
+  .button-variant(@stable, #FFF, @btn-default-border);
   background: none;
-  
+
   &:hover,
   &:focus,
   &.focus,
@@ -83,7 +83,7 @@ Additionaly style
   .button-variant(@btn-danger-bg; @body-bg; @body-bg);
   border: none;
   background: none;
-  
+
   &:hover,
   &:focus,
   &.focus,
@@ -91,6 +91,10 @@ Additionaly style
   &.active,
   .open > .dropdown-toggle&  {
     border: none;
-    background: none!important;    
+    background: none!important;
   }
+}
+
+.btn.btn-rounded {
+  border-radius: @btn-height / 2;
 }

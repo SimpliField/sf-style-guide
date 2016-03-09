@@ -3,35 +3,35 @@
 COLORS
 
 -------------------------------- */
-@color-contrast: 10%;
-// Gray
-@gray-base:              #000;
-@gray-dark:              lighten(@gray-base, 20%);   // #333
-@gray:                   lighten(@gray-base, 33.5%); // #555
-@gray-light:             lighten(@gray-base, 46.7%); // #777
-@gray-lighter:           lighten(@gray-base, 85%); // #d9d9d9
-@gray-clearer:           lighten(@gray-base, 98%); // #fafafa
+@light:                 #fff;
+@stable:                #6a91b3;
+@positive:              #3fabc5;
+@calm:                  #92b2c0;
+@balanced:              #6cb21b;
+@energized:             #f9edad;
+@assertive:             #dd3c3c;
+@royal:                 #F89C04;
+@dark:                  #163958;
+// Common
+@gray:                  #828d93;
+@gray-dark:             #475f6c;
+@assertive-dark:        #7b0505;
+@balanced-dark:         #346000;
+// Type
+@background-color:      #eef2f5;
+@separator-color:       rgba(205, 214, 223, 0.6);
+@bar-back:              #2e414b;
+@border-color:          #beccd9;
 
-// Blue
-@blue: #0fa4d6; 															   // Blue
-@blue-light: lighten(@blue, @color-contrast);    // Light Blue
-@blue-dark: darken(@blue, @color-contrast); 	   // Dark Blue
-
-// Green
-@green: #16a085; 															  // Green
-@green-light: lighten(@green, @color-contrast); // Light Green
-@green-dark: darken(@green, @color-contrast); 	// Dark Green
-
-// Red
-@red: #e74c3c;                                  // Red
-@red-light: lighten(@red, @color-contrast);     // Light Red
-@red-dark: darken(@red, @color-contrast);       // Dark Red
-
-// Orange
-@orange: #f1765e;                               // Orange
-@orange-light: #f69c60;                         // Light Orange
-@orange-dark: darken(@orange, @color-contrast); // Dark Orange
-
+// Old variables
+@gray-light:             lighten(@gray, 46.7%); // #777
+@blue: @positive; 															   // Blue
+@blue-light: lighten(@blue, 10%);    // Light Blue
+@green: @balanced; 															  // Green
+@green-dark: @balanced-dark; 	                  // Dark Green
+@red: @assertive;                 // Red
+@red-dark: @assertive-dark;       // Dark Red
+@orange: @royal;
 
 //--------- Bootstrap colors
 // Common
@@ -42,21 +42,14 @@ COLORS
 @brand-info: @blue-light;
 
 // Text
+@text-color: @dark;
 @state-info-text: #FFF;
 
 // Background
-@state-success-bg: @green-light;
-@state-info-bg: @blue-light;
-@state-warning-bg: @orange-light;
-@state-danger-bg: @red-light;
-
-
-/* --------------------------------
-
-STYLE
-
--------------------------------- */
-@border-color-base: @gray-lighter;
+@state-success-bg: @green;
+@state-info-bg: @blue;
+@state-warning-bg: @orange;
+@state-danger-bg: @assertive;
 
 
 /* --------------------------------
@@ -64,27 +57,95 @@ STYLE
 FONTS
 
 -------------------------------- */
-@font-family-base: 'proxima_nova', Helvetica, Arial, sans-serif;
+@AvenirPath:        '../fonts/avenir';
+@AvenirVersion:     '1.0.0';
+@MontserratPath:    '../fonts/Montserrat';
+@MontserratVersion: '1.0.0';
+@font-type:        'Avenir', sans-serif!important;
+@font-type-second: 'Montserrat', sans-serif!important;
+@font-family-base: @font-type;
+@font-size-base:   15px;
+@font-size-small:  12px;
+@headings-font-weight: 400;
 
 
-@font-size-h1: 27px;
-@font-size-h2: 25px;
-@font-size-h3: 23px;
-@font-size-h4: 17px;
-@font-size-h5: 15px;
-@font-size-small: 11px;
-@font-size-base:  13px;
+@font-size-h1: 30px;
+@font-size-h2: 24px;
+@font-size-h3: 20px;
+@font-size-h4: 18px;
+@font-size-h5: 16px;
 @font-size-large: @font-size-base;
 @font-size-nav: 15px;
 
-
-/* --------------------------------
-
-Size
-
--------------------------------- */
+// Common
+// -------------------------
+@content-padding: 20px;
+@default-padding: 10px;
+@box-shadow: 0px 1px 3px rgba(26, 35, 40, 0.5);
 // Border
-@border-radius-base: 2px;
+@border-color-base:   @border-color;
+@border-radius-base:  3px;
 @border-radius-large: @border-radius-base;
 // Padding
 @padding-base-vertical: 9px;
+
+// Input
+// -------------------------
+@input-color-placeholder: #afc2d3;
+
+// Btn
+// -------------------------
+@btn-height: 36px;
+@btn-padding: 6px @content-padding;
+@btn-primary-border: @blue;
+@btn-success-border: @brand-success;
+@btn-danger-border: @brand-danger;
+@btn-large-padding: 13px;
+
+// Item
+// -------------------------
+@item-font-size:        15px;
+@item-border-width:     1px;
+@item-font-weight:    	400;
+@item-padding:          10px;
+@item-border-radius:    3px;
+@item-labels-padding:   8px;
+@item-medium-padding:   @item-padding - 2;
+@item-medium-font-size: @item-font-size;
+@item-small-padding:    @item-padding - 4;
+@item-small-font-size:  15px;
+// Item label
+@item-label-padding:       2px 10px;
+@item-label-font-size:     10px;
+@item-label-border-radius: @item-border-radius;
+@item-label-color:         @light;
+@item-label-font-type:     @font-type-second;
+// Colors
+@item-default-box-shadow: none;
+@item-default-bg:       	transparent;
+@item-default-border:   	@border-color;
+@item-default-text:     	@stable;
+@item-light-bg:            @light;
+@item-light-border:        @item-default-border;
+@item-light-text:          @item-default-text;
+@item-light-box-shadow:    0 1px 0 rgba(207, 218, 228, 0.3);
+@item-light-hover-bg:      @light;
+@item-light-hover-text:    @positive;
+@item-light-hover-border:  @positive;
+@item-calm-bg:      		@calm;
+@item-calm-border:  		#6c8895;
+@item-calm-text:    		#fff;
+@item-calm-box-shadow: 	0 1px 0 rgba(108, 136, 149, 0.2);
+@item-positive-bg:     			@positive;
+@item-positive-text:   			@light;
+@item-positive-border: 			#15829c;
+@item-positive-box-shadow: 	0 1px 0 rgba(21, 130, 156, 0.2);
+@item-calm-box-shadow: 	0 1px 0 rgba(108, 136, 149, 0.2);
+@item-assertive-bg:     			@assertive;
+@item-assertive-text:   			@light;
+@item-assertive-border: 			#15829c;
+@item-assertive-box-shadow: 	0 1px 0 rgba(21, 130, 156, 0.2);
+@item-balanced-bg:     			#E6F8DF;
+@item-balanced-text:   			@balanced;
+@item-balanced-border: 			@balanced;
+@item-balanced-box-shadow: 	0 1px 0 rgba(21, 130, 156, 0.2);
