@@ -64,7 +64,6 @@ COLORS
 @font-size-base:  15px;
 @font-size-small: 12px;
 @font-size-large: @font-size-base;
-@font-size-nav:   @font-size-base;
 
 // Common
 // -------------------------
@@ -78,6 +77,14 @@ COLORS
 // Padding
 @padding-base-vertical: 9px;
 
+
+// Header
+// -------------------------
+@header-height: 50px;
+@header-color: @bar-back;
+// nav
+@nav-height:    @header-height;
+@font-size-nav: @font-size-base;
 
 // Input
 // -------------------------
@@ -200,6 +207,45 @@ COLORS
 @state-success-border: @balanced;
 // Addon
 @input-group-addon-bg: @input-bg;
+
+
+// Table
+// -------------------------
+@table-bg: @light;
+@table-border-color: @border-color-base;
+@table-box-shadow: 0 1px 0 rgba(207, 218, 228, 0.3);
+@table-border-radius: @border-radius-base;
+// head
+@table-head-bg: #E0E7EC;
+@table-head-color: @stable;
+@table-head-height: 35px;
+@table-head-padding: 5px 10px;
+@table-head-font-size: 13px;
+// Cell
+@table-cell-bg: @background-color;
+@table-cell-height: @table-head-height + 15px;
+@table-cell-padding: 10px;
+@table-cell-hover-bg: @positive;
+@table-cell-hover-color: @light;
+// Footer
+@table-footer-height: @table-head-height + 5px;
+// Tools
+@tools-padding: @content-padding;
+// Pagination
+@pagination-bg: transparent;
+@pagination-color: fade(@dark, 60);
+@pagination-border: @pagination-bg;
+@pagination-disabled-border: @pagination-border;
+@pagination-width: 30px;
+@pagination-height: @pagination-width;
+@pagination-border-radius: @border-radius-base;
+@pagination-active-bg: @stable;
+@pagination-active-border: @pagination-active-bg;
+@pagination-disabled-bg: @pagination-bg;
+@pagination-disabled-color: fade(@dark, 30);
+@pagination-hover-bg: @pagination-bg;
+@pagination-hover-color: @dark;
+@pagination-hover-border: @pagination-bg;
 
 
 // Components

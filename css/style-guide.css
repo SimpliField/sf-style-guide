@@ -2241,7 +2241,7 @@ pre code {
   }
 }
 table {
-  background-color: transparent;
+  background-color: #fff;
 }
 caption {
   padding-top: 10px;
@@ -2537,7 +2537,7 @@ output {
   padding-top: 10px;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #475f6c;
+  color: #828d93;
 }
 .form-control {
   display: block;
@@ -2546,10 +2546,10 @@ output {
   padding: 9px 12px;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #475f6c;
+  color: #828d93;
   background-color: #f3f6f9;
   background-image: none;
-  border: 1px solid #beccd9;
+  border: 1px solid 1px solid #beccd9;
   border-radius: 3px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -2558,10 +2558,10 @@ output {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-  border-color: #3fabc5;
+  border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(63, 171, 197, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(63, 171, 197, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .form-control::-moz-placeholder {
   color: #afc2d3;
@@ -4129,10 +4129,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 15px;
   font-weight: normal;
   line-height: 1;
-  color: #475f6c;
+  color: #828d93;
   text-align: center;
   background-color: #f3f6f9;
-  border: 1px solid #beccd9;
+  border: 1px solid 1px solid #beccd9;
   border-radius: 3px;
 }
 .input-group-addon.input-sm {
@@ -4951,7 +4951,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   line-height: 1.42857143;
   text-decoration: none;
   color: rgba(22, 57, 88, 0.6);
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid transparent;
   margin-left: -1px;
 }
@@ -4994,7 +4994,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
   color: rgba(22, 57, 88, 0.3);
-  background-color: #fff;
+  background-color: transparent;
   border-color: transparent;
   cursor: not-allowed;
 }
@@ -5043,7 +5043,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid transparent;
   border-radius: 15px;
 }
@@ -5065,7 +5065,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager .disabled > a:focus,
 .pager .disabled > span {
   color: rgba(22, 57, 88, 0.3);
-  background-color: #fff;
+  background-color: transparent;
   cursor: not-allowed;
 }
 .label {
@@ -7057,29 +7057,29 @@ COLORS
   font-weight: 500;
   font-style: normal;
 }
-/* -------------------------------- 
+/* --------------------------------
 
 Navigation
 
 -------------------------------- */
 .sf_header {
-  background-color: #3fabc5;
-  height: 40px;
+  height: 50px;
   font-size: 15px;
+  background-color: #2e414b;
 }
 .sf_header-organisation {
   float: left;
   display: inline-block;
   color: #FFF;
   padding: 0 40px 0 10px;
-  line-height: 40px;
+  line-height: 50px;
 }
 .sf_header-nav {
   display: inline-block;
 }
 .sf_header-nav .sf_header-nav-elems {
   display: table;
-  height: 40px;
+  height: 50px;
   padding: 0 2em;
   text-align: left;
 }
@@ -7473,11 +7473,33 @@ fieldset[disabled] .btn.btn-cancel.active {
 .btn.btn-rounded {
   border-radius: 18px;
 }
-/* --------------------------------
+/*---------------------
 
-Bootstrap
+Inputs
 
--------------------------------- */
+---------------------*/
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  background-color: #f3f6f9;
+  border: 1px solid #beccd9;
+  color: #6a91b3;
+  box-shadow: inset 0 1px 1px rgba(166, 183, 199, 0.5);
+  padding: 10px;
+  border-radius: 3px;
+}
 /* --------------------------------
 
 Custom
@@ -7559,7 +7581,7 @@ select:focus {
   border-left: none;
 }
 .input-group-addon + .form-control:focus {
-  border-color: #beccd9;
+  border-color: 1px solid #beccd9;
 }
 /*---------------------
 
@@ -7689,16 +7711,6 @@ Toggle
   height: 2px;
   background: #ccc;
 }
-/* --------------------------------
-
-Bootstrap
-
--------------------------------- */
-/* --------------------------------
-
-Additionaly style
-
--------------------------------- */
 .table {
   border: 1px solid #beccd9;
   box-shadow: 0 1px 0 rgba(207, 218, 228, 0.3);
@@ -7706,7 +7718,7 @@ Additionaly style
   border-collapse: initial;
 }
 .table thead {
-  background-color: #eef2f5;
+  background-color: #E0E7EC;
   color: #6a91b3;
 }
 .table tbody tr:nth-child(2n) {
@@ -7717,7 +7729,7 @@ Additionaly style
   color: #fff;
 }
 .table tfoot {
-  background-color: #eef2f5;
+  background-color: #E0E7EC;
   color: #6a91b3;
 }
 .table > thead > tr > th {
@@ -7786,8 +7798,8 @@ Tools
 
 -------------------------------- */
 .sf_table__tools {
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   float: left;
   width: 100%;
 }
@@ -8048,6 +8060,15 @@ Additionaly style
   color: #6a91b3;
   font-size: 13px;
 }
+.box {
+  border-radius: 2px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(26, 35, 40, 0.5);
+}
+.box.box-back-color {
+  background-color: #eef2f5;
+}
 .sf_empty {
   text-align: center;
   padding-top: 40px;
@@ -8055,12 +8076,10 @@ Additionaly style
 .sf_empty.panel {
   padding-top: inherit;
 }
-.sf_empty .sf_empty-title {
-  margin-top: 30px;
-}
 .sf_empty .sf_empty-circle {
   position: relative;
   padding-top: 5px;
+  margin-bottom: 30px;
 }
 .sf_empty .sf_empty-badge {
   position: absolute;
