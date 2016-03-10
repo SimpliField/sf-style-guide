@@ -20,7 +20,7 @@ input[type="tel"],
 input[type="color"] {
   background-color: @input-bg;
   border: @input-border;
-  color: @stable;
+  color: @input-color;
   box-shadow: @input-box-shadow;
   padding: @input-padding;
   border-radius: @input-border-radius;
@@ -109,7 +109,10 @@ select {
 
 // Addon
 .input-group-addon + .form-control{
-  border-left: none;
+  background-color: @input-bg;
+  border:           @input-border;
+  color:            @input-color;
+  border-left-width: 0;
 
   &:focus {
     border-color: @input-border;
