@@ -7545,16 +7545,19 @@ select:focus {
   content: '\eA06';
 }
 .dropdown-toggle {
+  padding: 8px 40px 8px 20px;
+  border-radius: 3px;
+  border: 1px solid #beccd9;
+  font-size: 12px;
   font-family: 'Montserrat', sans-serif !important;
   text-transform: uppercase;
-  font-size: 12px;
-  padding-left: 20px;
-  padding-right: 30px;
+  font-weight: 400;
+  background: #fff;
+  color: #6a91b3;
+  cursor: pointer;
 }
-.dropdown-toggle.form-select:before,
-.dropdown-toggle.sf_input-select:before {
-  top: 1px;
-  right: 0;
+.dropdown-toggle.form-select:before {
+  top: 8px;
 }
 .input-group-addon + .form-control {
   border-left: none;
@@ -8069,6 +8072,9 @@ Additionaly style
 }
 .sf_empty .sf_empty-icon {
   font-size: 45px;
+}
+.sf_empty .sf_empty-title {
+  margin-top: 0;
 }
 .sf_empty .sf_empty-desc {
   width: 60%;

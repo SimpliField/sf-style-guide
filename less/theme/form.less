@@ -86,17 +86,24 @@ select {
     .icon('\eA06');
   }
 }
-.dropdown-toggle {
-  font-family: @font-type-second;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding-left: @content-padding;
-  padding-right: @content-padding + 10px;
 
-  &.form-select:before,
-  &.sf_input-select:before {
-    top: 1px;
-    right: 0;
+.dropdown-toggle {
+  padding:       @dropdown-padding;
+
+  border-radius: @dropdown-border-radius;
+  border:        1px solid @dropdown-border-color;
+
+  font-size:      @dropdown-font-size;
+  font-family:    @dropdown-font-family;
+  text-transform: uppercase;
+  font-weight:    @dropdown-font-weight;
+
+  background: @dropdown-bg;
+  color:      @dropdown-color;
+  cursor: pointer;
+
+  &.form-select:before {
+    top: 8px;
   }
 }
 
