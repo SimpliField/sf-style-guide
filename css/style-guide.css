@@ -2537,7 +2537,7 @@ output {
   padding-top: 10px;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #828d93;
+  color: #6a91b3;
 }
 .form-control {
   display: block;
@@ -2546,7 +2546,7 @@ output {
   padding: 9px 12px;
   font-size: 15px;
   line-height: 1.42857143;
-  color: #828d93;
+  color: #6a91b3;
   background-color: #f3f6f9;
   background-image: none;
   border: 1px solid 1px solid #beccd9;
@@ -4129,7 +4129,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 15px;
   font-weight: normal;
   line-height: 1;
-  color: #828d93;
+  color: #6a91b3;
   text-align: center;
   background-color: #f3f6f9;
   border: 1px solid 1px solid #beccd9;
@@ -7560,7 +7560,10 @@ select:focus {
   top: 8px;
 }
 .input-group-addon + .form-control {
-  border-left: none;
+  background-color: #f3f6f9;
+  border: 1px solid #beccd9;
+  color: #6a91b3;
+  border-left-width: 0;
 }
 .input-group-addon + .form-control:focus {
   border-color: 1px solid #beccd9;
@@ -7845,11 +7848,6 @@ Labels
 .circle.circle-tall {
   height: 100px;
   width: 100px;
-  line-height: 110px;
-}
-.circle.circle-tall {
-  height: 100px;
-  width: 100px;
   line-height: 100px;
   border-radius: 50%;
   display: inline-block;
@@ -8083,6 +8081,64 @@ Additionaly style
 }
 .sf_empty .sf_empty-button {
   margin-top: 20px;
+}
+.sf-loader_container {
+  text-align: center;
+}
+.sf-loader_container .sf-loader-centering {
+  margin-left: -1.3em;
+}
+.sf-loader_container .sf-loader_element {
+  opacity: 0;
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  line-height: 45px;
+  background-color: #fff;
+  border: 1px solid #beccd9;
+  border-radius: 3px;
+  animation: loading-dots-fadein 0.5s linear forwards;
+}
+.sf-loader_container .sf-loader_element i {
+  width: 0.5em;
+  height: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 0.125em;
+  margin-left: 0.125em;
+  animation: loading-dots-middle-dots 0.5s linear infinite;
+  background: #3fabc5;
+}
+.sf-loader_container .sf-loader_element i:first-child {
+  animation: loading-dots-first-dot 0.5s linear infinite;
+  opacity: 0;
+  transform: translate(-1em);
+}
+.sf-loader_container .sf-loader_element i:last-child {
+  animation: loading-dots-last-dot 0.5s linear infinite;
+}
+@keyframes loading-dots-fadein {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loading-dots-first-dot {
+  100% {
+    transform: translate(1em);
+    opacity: 1;
+  }
+}
+@keyframes loading-dots-middle-dots {
+  100% {
+    transform: translate(1em);
+  }
+}
+@keyframes loading-dots-last-dot {
+  100% {
+    transform: translate(2em);
+    opacity: 0;
+  }
 }
 /* Icons */
 .icon-rounded {
