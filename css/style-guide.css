@@ -7900,6 +7900,50 @@ Additionaly style
 .item .item-labels:before {
   background: linear-gradient(90deg, transparent 0%, transparent 80%, transparent 100%);
 }
+.item h2 {
+  margin: 0 0 2px 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+.item h3 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+}
+.item h4 {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+}
+.item h5,
+.item h6 {
+  margin: 0 0 3px 0;
+  font-size: 10px;
+}
+.item p {
+  margin-bottom: 2px;
+}
+.item h2,
+.item h3,
+.item h4,
+.item h5 {
+  color: #163958;
+  margin-bottom: 0;
+}
+.item h2 + p,
+.item h3 + p,
+.item h4 + p,
+.item h5 + p,
+.item p + p {
+  margin-top: 10px;
+}
+.item h1:last-child,
+.item h2:last-child,
+.item h3:last-child,
+.item h4:last-child,
+.item h5:last-child,
+.item h6:last-child,
+.item p:last-child {
+  margin-bottom: 0;
+}
 .item.item-light {
   border-color: #beccd9;
   background-color: #fff;
@@ -7912,7 +7956,7 @@ Additionaly style
 .item.item-light .item-labels:before {
   background: linear-gradient(90deg, transparent 0%, #fff 80%, #fff 100%);
 }
-.item.item-light:hover {
+.item.item-light.item-hover:hover {
   border-color: #3fabc5;
   background-color: #fff;
   color: #3fabc5;
@@ -7985,11 +8029,6 @@ Additionaly style
 .item[ng-click]:hover {
   cursor: pointer;
 }
-.item h2 {
-  margin: 0 0 2px 0;
-  font-size: 17px;
-  font-weight: 600;
-}
 .item .item-labels {
   position: absolute;
   top: 8px;
@@ -8039,6 +8078,11 @@ Additionaly style
   float: right;
   color: #6a91b3;
   font-size: 13px;
+}
+.list-shadow .item {
+  border-radius: 2px;
+  border-width: 0;
+  box-shadow: 0px 1px 1px rgba(151, 174, 186, 0.75);
 }
 .box {
   border-radius: 2px;

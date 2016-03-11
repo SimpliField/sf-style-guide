@@ -13,10 +13,56 @@
   font-weight:    @item-font-weight;
   border-radius:  @item-border-radius;
 
+  h2 {
+    margin: 0 0 2px 0;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  h3 {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+  }
+  h4 {
+    margin: 0 0 4px 0;
+    font-size: 12px;
+  }
+  h5, h6 {
+    margin: 0 0 3px 0;
+    font-size: 10px;
+  }
+  p {
+    margin-bottom: 2px;
+  }
+
+  h2, h3, h4, h5 {
+    margin-bottom: 0;
+  }
+
+  h2, h3, h4, h5, p {
+    & + p {
+      margin-top: @default-padding;
+    }
+  }
+
+  h1:last-child,
+  h2:last-child,
+  h3:last-child,
+  h4:last-child,
+  h5:last-child,
+  h6:last-child,
+  p:last-child {
+    margin-bottom: 0;
+  }
+
   // Different themes for items
   &.item-light {
+    h2, h3, h4, h5 { color: @item-default-title; }
+
     .item-style(@item-light-bg, @item-light-border, @item-light-text, @item-light-box-shadow);
-    .item-hover-style(@item-light-hover-bg, @item-light-hover-border, @item-light-hover-text);
+
+    &.item-hover {
+      .item-hover-style(@item-light-hover-bg, @item-light-hover-border, @item-light-hover-text);
+    }
   }
   &.item-calm {
     .item-style(@item-calm-bg, @item-calm-border, @item-calm-text, @item-calm-box-shadow);
@@ -51,12 +97,6 @@
 
   &[ng-click]:hover {
     cursor: pointer;
-  }
-
-  h2 {
-    margin: 0 0 2px 0;
-    font-size: 17px;
-    font-weight: 600;
   }
 
   .item-labels {
@@ -105,7 +145,6 @@
   padding: 0;
 }
 
-
 .item-input {
   input,
   .range input,
@@ -139,4 +178,11 @@
   float: right;
   color: @stable;
   font-size: 13px;
+}
+
+// List helper
+.list-shadow .item {
+  border-radius: 2px;
+  border-width: 0;
+  box-shadow: 0px 1px 1px rgba(151, 174, 186, 0.75);
 }
