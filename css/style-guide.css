@@ -6984,7 +6984,6 @@ COLORS
   font-family: 'Avenir';
   src: url('../fonts/avenir/Black/avenir-Black.eot?v=1.0.0');
   src: url('../fonts/avenir/Black/avenir-Black.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/avenir/Black/avenir-Black.woff?v=1.0.0') format('woff');
-  src: url('../fonts/Montserrat/Montserrat-Black.ttf?v=1.0.0');
   font-weight: 900;
   font-style: normal;
 }
@@ -6992,7 +6991,6 @@ COLORS
   font-family: 'Avenir';
   src: url('../fonts/avenir/Heavy/avenir-Heavy.eot?v=1.0.0');
   src: url('../fonts/avenir/Heavy/avenir-Heavy.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/avenir/Heavy/avenir-Heavy.woff?v=1.0.0') format('woff');
-  src: url('../fonts/Montserrat/Montserrat-Heavy.ttf?v=1.0.0');
   font-weight: 800;
   font-style: normal;
 }
@@ -7000,7 +6998,6 @@ COLORS
   font-family: 'Avenir';
   src: url('../fonts/avenir/Medium/avenir-Medium.eot?v=1.0.0');
   src: url('../fonts/avenir/Medium/avenir-Medium.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/avenir/Medium/avenir-Medium.woff?v=1.0.0') format('woff');
-  src: url('../fonts/Montserrat/Montserrat-Medium.ttf?v=1.0.0');
   font-weight: 600;
   font-style: normal;
 }
@@ -7008,7 +7005,6 @@ COLORS
   font-family: 'Avenir';
   src: url('../fonts/avenir/Roman/avenir-Roman.eot?v=1.0.0');
   src: url('../fonts/avenir/Roman/avenir-Roman.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/avenir/Roman/avenir-Roman.woff?v=1.0.0') format('woff');
-  src: url('../fonts/Montserrat/Montserrat-Roman.ttf?v=1.0.0');
   font-weight: 500;
   font-style: normal;
 }
@@ -7016,7 +7012,6 @@ COLORS
   font-family: 'Avenir';
   src: url('../fonts/avenir/Book/avenir-Book.eot?v=1.0.0');
   src: url('../fonts/avenir/Book/avenir-Book.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/avenir/Book/avenir-Book.woff?v=1.0.0') format('woff');
-  src: url('../fonts/Montserrat/Montserrat-Book.ttf?v=1.0.0');
   font-weight: 400;
   font-style: normal;
 }
@@ -7024,14 +7019,11 @@ COLORS
   font-family: 'Avenir';
   src: url('../fonts/avenir/Light/avenir-Light.eot?v=1.0.0');
   src: url('../fonts/avenir/Light/avenir-Light.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/avenir/Light/avenir-Light.woff?v=1.0.0') format('woff');
-  src: url('../fonts/Montserrat/Montserrat-Light.ttf?v=1.0.0');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Montserrat';
-  src: url('../fonts/avenir/Regular/avenir-Regular.eot?v=1.0.0');
-  src: url('../fonts/avenir/Regular/avenir-Regular.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/avenir/Regular/avenir-Regular.woff?v=1.0.0') format('woff');
   src: url('../fonts/Montserrat/Montserrat-Regular.ttf?v=1.0.0');
   font-weight: 500;
   font-style: normal;
