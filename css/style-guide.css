@@ -7789,6 +7789,11 @@ Tools
   float: left;
   width: 100%;
 }
+.sf_table__tools .sf_table__tools-counter {
+  margin-top: 12px;
+  margin-right: 10px;
+  font-size: 13px;
+}
 .sf_table__tools .pagination {
   float: right;
   margin: 5px 0;
