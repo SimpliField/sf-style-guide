@@ -5468,7 +5468,7 @@ a.thumbnail.active {
   padding: 10px 15px;
   margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #beccd9;
 }
 .list-group-item:first-child {
   border-top-right-radius: 3px;
@@ -8106,6 +8106,15 @@ Additionaly style
   border-radius: 2px;
   border-width: 0;
   box-shadow: 0px 1px 1px rgba(151, 174, 186, 0.75);
+}
+.list .item:not(:last-of-type) {
+  border-bottom-width: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.list .item:not(:first-of-type) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 .box {
   border-radius: 2px;
