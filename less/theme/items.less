@@ -9,12 +9,13 @@
   border-width:   @item-border-width;
   border-style:   solid;
   font-size:      @item-font-size;
+
   line-height:    @item-font-size + 4;
   font-weight:    @item-font-weight;
   border-radius:  @item-border-radius;
 
   h2 {
-    margin: 0 0 2px 0;
+    margin: 0 0 @default-padding 0;
     font-size: 16px;
     font-weight: 500;
   }
@@ -31,17 +32,18 @@
     font-size: 10px;
   }
   p {
+    font-size: 14px;
     margin-bottom: 2px;
-  }
 
-  h2, h3, h4, h5 {
-    margin-bottom: 0;
-  }
-
-  h2, h3, h4, h5, p {
     & + p {
       margin-top: @default-padding;
     }
+  }
+
+  h2, h3, h4, h5, p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   h1:last-child,
@@ -150,6 +152,14 @@
   .range input,
   textarea {
     width: 100%;
+  }
+}
+
+.item-text-wrap {
+  &.item, & .item,
+  & h1, & h2, & h3, & h4, & h5, & h6, & p {
+    overflow: visible;
+    white-space: normal;
   }
 }
 

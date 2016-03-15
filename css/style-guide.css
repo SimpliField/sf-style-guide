@@ -7199,6 +7199,7 @@ Custom
 h1,
 h2,
 h3 {
+  margin-top: 0;
   font-weight: normal;
 }
 h3 {
@@ -7901,9 +7902,9 @@ Additionaly style
   background: linear-gradient(90deg, transparent 0%, transparent 80%, transparent 100%);
 }
 .item h2 {
-  margin: 0 0 2px 0;
-  font-size: 17px;
-  font-weight: 600;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 500;
 }
 .item h3 {
   margin: 0 0 4px 0;
@@ -7919,21 +7920,20 @@ Additionaly style
   font-size: 10px;
 }
 .item p {
+  font-size: 14px;
   margin-bottom: 2px;
+}
+.item p + p {
+  margin-top: 10px;
 }
 .item h2,
 .item h3,
 .item h4,
-.item h5 {
-  color: #163958;
-  margin-bottom: 0;
-}
-.item h2 + p,
-.item h3 + p,
-.item h4 + p,
-.item h5 + p,
-.item p + p {
-  margin-top: 10px;
+.item h5,
+.item p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .item h1:last-child,
 .item h2:last-child,
@@ -7949,6 +7949,12 @@ Additionaly style
   background-color: #fff;
   color: #6a91b3;
   box-shadow: 0 1px 0 rgba(207, 218, 228, 0.3);
+}
+.item.item-light h2,
+.item.item-light h3,
+.item.item-light h4,
+.item.item-light h5 {
+  color: #163958;
 }
 .item.item-light .item-labels {
   background-color: #fff;
@@ -8073,6 +8079,18 @@ Additionaly style
 .item-input .range input,
 .item-input textarea {
   width: 100%;
+}
+.item-text-wrap.item,
+.item-text-wrap .item,
+.item-text-wrap h1,
+.item-text-wrap h2,
+.item-text-wrap h3,
+.item-text-wrap h4,
+.item-text-wrap h5,
+.item-text-wrap h6,
+.item-text-wrap p {
+  overflow: visible;
+  white-space: normal;
 }
 .item-note {
   float: right;
