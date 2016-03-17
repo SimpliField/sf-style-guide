@@ -8182,38 +8182,6 @@ Additionaly style
   margin-right: auto;
   margin-left: auto;
 }
-.sf_error {
-  text-align: center;
-  padding-top: 40px;
-}
-.sf_error.panel {
-  padding-top: inherit;
-}
-.sf_error .sf_error-circle {
-  position: relative;
-  padding-top: 5px;
-  margin-bottom: 30px;
-}
-.sf_error .sf_error-badge {
-  position: absolute;
-  top: 0;
-  right: 5px;
-  height: 20px;
-  line-height: 1.3em;
-  background-color: #dd3c3c;
-}
-.sf_error .sf_error-icon {
-  font-size: 35px;
-  line-height: 1;
-}
-.sf_error .sf_error-title {
-  margin-top: 0;
-}
-.sf_error .sf_error-desc {
-  width: 60%;
-  margin-right: auto;
-  margin-left: auto;
-}
 .sf-loader_container {
   text-align: center;
 }
