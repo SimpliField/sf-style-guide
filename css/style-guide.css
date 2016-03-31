@@ -8030,9 +8030,6 @@ Additionaly style
   border-top-left-radius: 0;
   font-size: 12px;
 }
-.item[ng-click]:hover {
-  cursor: pointer;
-}
 .item .item-labels {
   position: absolute;
   top: 8px;
@@ -8046,7 +8043,10 @@ Additionaly style
   left: -50px;
   top: 0;
 }
-.item .item-labels .item-label {
+.item[ng-click]:hover {
+  cursor: pointer;
+}
+.item-label {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 10px;
   font-weight: 400;
@@ -8055,12 +8055,12 @@ Additionaly style
   padding: 2px 10px;
   color: #fff;
 }
-.item .item-labels .item-label.item-label-light {
+.item-label.item-label-light {
   border: 1px solid #3fabc5;
   color: #3fabc5;
   background-color: #fff;
 }
-.item .item-labels .item-label.item-label-stable {
+.item-label.item-label-stable {
   border: 1px solid #6a91b3;
   color: #6a91b3;
   background-color: #eef2f5;
