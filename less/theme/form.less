@@ -125,19 +125,21 @@ Toggle
 
 ---------------------*/
 .toggle {
+  .clearfix;
   border: 1px solid;
   border-color: @toggle-default-border-color;
   background: @toggle-default-bg;
   padding: @toggle-padding;
-  border-radius: @toggle-border-radius;
   box-shadow: @item-light-box-shadow;
+  border-radius: @toggle-border-radius;
   font-family: @font-type-second;
 
   .option {
+    width: 50%;
+    float: left;
     max-height: @toggle-height;
     line-height: @toggle-height;
     padding: 0 @toggle-option-padding;
-    border-radius: @toggle-border-radius;
     text-transform: uppercase;
     border-width: 0;
     background: initial;
@@ -148,6 +150,12 @@ Toggle
       background: @toggle-default-active-bg;
       color: @toggle-default-active-color;
     }
+  }
+  .option--left{
+    border-radius: @toggle-border-radius 0 0 @toggle-border-radius;
+  }
+  .option--right{
+    border-radius: 0 @toggle-border-radius @toggle-border-radius 0;
   }
   &.toggle-rounded {
     border-radius: @toggle-rounded-border-radius;
