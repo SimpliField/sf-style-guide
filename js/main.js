@@ -30,6 +30,7 @@ jQuery(document).ready(function($){
 	copyCodeExample('#form');
 	copyCodeExample('#tables');
 	copyCodeExample('#empty');
+	copyCodeExample('#items');
 
 	function copyCodeExample(id) {
 		var wrapper = $(id);

@@ -1,34 +1,33 @@
-.sf_empty {
+.sf_error {
   text-align: center;
   padding-top: 40px;
 
   &.panel {
     padding-top: inherit;
   }
-  .sf_empty-circle {
+  .sf_error-circle {
     position: relative;
     padding-top: 5px; // Fix centering
     margin-bottom: @empty-title-margin;
   }
-  .sf_empty-badge {
+  .sf_error-badge {
     position: absolute;
     top: 0;
     right: 5px;
     height: @empty-badge-height;
     line-height: 1.3em;
+    background-color: @assertive;
   }
-  .sf_empty-icon {
-    font-size: @empty-icon-size;
+  .sf_error-icon {
+    font-size: @empty-icon-size - 10px; //bug on the icon
+    line-height: 1;
   }
-  .sf_empty-title {
+  .sf_error-title {
     margin-top: 0;
   }
-  .sf_empty-desc {
+  .sf_error-desc {
     width: 60%;
     margin-right: auto;
     margin-left: auto;
-  }
-  .sf_empty-button {
-    margin-top: @empty-bottom-margin;
   }
 }

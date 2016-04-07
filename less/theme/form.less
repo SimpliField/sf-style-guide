@@ -20,7 +20,7 @@ input[type="tel"],
 input[type="color"] {
   background-color: @input-bg;
   border: @input-border;
-  color: @stable;
+  color: @input-color;
   box-shadow: @input-box-shadow;
   padding: @input-padding;
   border-radius: @input-border-radius;
@@ -86,23 +86,33 @@ select {
     .icon('\eA06');
   }
 }
-.dropdown-toggle {
-  font-family: @font-type-second;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding-left: @content-padding;
-  padding-right: @content-padding + 10px;
 
-  &.form-select:before,
-  &.sf_input-select:before {
-    top: 1px;
-    right: 0;
+.dropdown-toggle {
+  padding:       @dropdown-padding;
+
+  border-radius: @dropdown-border-radius;
+  border:        1px solid @dropdown-border-color;
+
+  font-size:      @dropdown-font-size;
+  font-family:    @dropdown-font-family;
+  text-transform: uppercase;
+  font-weight:    @dropdown-font-weight;
+
+  background: @dropdown-bg;
+  color:      @dropdown-color;
+  cursor: pointer;
+
+  &.form-select:before {
+    top: 8px;
   }
 }
 
 // Addon
 .input-group-addon + .form-control{
-  border-left: none;
+  background-color: @input-bg;
+  border:           @input-border;
+  color:            @input-color;
+  border-left-width: 0;
 
   &:focus {
     border-color: @input-border;
@@ -115,19 +125,21 @@ Toggle
 
 ---------------------*/
 .toggle {
+  .clearfix;
   border: 1px solid;
   border-color: @toggle-default-border-color;
   background: @toggle-default-bg;
   padding: @toggle-padding;
-  border-radius: @toggle-border-radius;
   box-shadow: @item-light-box-shadow;
+  border-radius: @toggle-border-radius;
   font-family: @font-type-second;
 
   .option {
+    width: 50%;
+    float: left;
     max-height: @toggle-height;
     line-height: @toggle-height;
     padding: 0 @toggle-option-padding;
-    border-radius: @toggle-border-radius;
     text-transform: uppercase;
     border-width: 0;
     background: initial;
@@ -138,6 +150,12 @@ Toggle
       background: @toggle-default-active-bg;
       color: @toggle-default-active-color;
     }
+  }
+  .option--left{
+    border-radius: @toggle-border-radius 0 0 @toggle-border-radius;
+  }
+  .option--right{
+    border-radius: 0 @toggle-border-radius @toggle-border-radius 0;
   }
   &.toggle-rounded {
     border-radius: @toggle-rounded-border-radius;

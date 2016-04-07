@@ -1,0 +1,19 @@
+.dropdown-menu {
+  margin: 0;
+  margin-top: -1px;
+  padding: 0;
+  border-radius: 0;
+  > li {
+    &:hover, &:focus, &:active {
+      color: lighten(@stable, 10%);
+      background-color: @background-color;
+      border-bottom-color: lighten(@stable, 10%);
+    }
+    > a {
+      padding: @default-padding @content-padding;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}

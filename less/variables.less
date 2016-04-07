@@ -64,7 +64,6 @@ COLORS
 @font-size-base:  15px;
 @font-size-small: 12px;
 @font-size-large: @font-size-base;
-@font-size-nav:   @font-size-base;
 
 // Common
 // -------------------------
@@ -78,6 +77,14 @@ COLORS
 // Padding
 @padding-base-vertical: 9px;
 
+
+// Header
+// -------------------------
+@header-height: 50px;
+@header-color: @bar-back;
+// nav
+@nav-height:    @header-height;
+@font-size-nav: @font-size-base;
 
 // Input
 // -------------------------
@@ -104,7 +111,8 @@ COLORS
 @item-medium-padding:   @item-padding - 2;
 @item-medium-font-size: @item-font-size;
 @item-small-padding:    @item-padding - 4;
-@item-small-font-size:  15px;
+@item-small-font-size:  14px;
+@item-default-title:    @dark;
 // Item label
 @item-label-padding:       2px 10px;
 @item-label-font-size:     10px;
@@ -141,6 +149,14 @@ COLORS
 @item-balanced-border: 			@balanced;
 @item-balanced-box-shadow: 	0 1px 0 rgba(21, 130, 156, 0.2);
 
+// List
+// -------------------------
+@list-group-border: @border-color;
+
+// Separators
+// -------------------------
+@hr-border: @border-color-base;
+
 // Box
 // -------------------------
 @box-border-radius: 2px;
@@ -162,6 +178,7 @@ COLORS
 @input-height-base: 40px;
 @input-bg:            #f3f6f9;
 @input-border:        1px solid @border-color;
+@input-color:         @stable;
 @input-padding:       @item-padding;
 @input-border-radius: @item-border-radius;
 @input-box-shadow:    inset 0 1px 1px rgba(166, 183, 199, 0.5);
@@ -200,14 +217,73 @@ COLORS
 @state-success-border: @balanced;
 // Addon
 @input-group-addon-bg: @input-bg;
+// Dropdown
+@dropdown-padding: 8px (@content-padding * 2) 8px @content-padding;
+@dropdown-bg:    @light;
+@dropdown-color: @stable;
+@dropdown-border-color: @border-color;
+@dropdown-border-radius: @item-border-radius;
+@dropdown-font-size: 12px;
+@dropdown-font-family: @font-type-second;
+@dropdown-font-weight: @item-font-weight;
+@dropdown-link-hover-bg: inherit;
 
+
+// Table
+// -------------------------
+@table-bg: @light;
+@table-border-color: @border-color-base;
+@table-box-shadow: 0 1px 0 rgba(207, 218, 228, 0.3);
+@table-border-radius: @border-radius-base;
+// head
+@table-head-bg: #E0E7EC;
+@table-head-color: @stable;
+@table-head-height: 35px;
+@table-head-padding: 5px 10px;
+@table-head-font-size: 13px;
+// Cell
+@table-cell-bg: @background-color;
+@table-cell-height: @table-head-height + 15px;
+@table-cell-padding: 10px;
+@table-cell-hover-bg: @positive;
+@table-cell-hover-color: @light;
+// Footer
+@table-footer-height: @table-head-height + 5px;
+// Tools
+@tools-padding: @content-padding;
+// Pagination
+@pagination-bg: transparent;
+@pagination-color: fade(@dark, 60);
+@pagination-border: @pagination-bg;
+@pagination-disabled-border: @pagination-border;
+@pagination-width: 30px;
+@pagination-height: @pagination-width;
+@pagination-border-radius: @border-radius-base;
+@pagination-active-bg: @stable;
+@pagination-active-border: @pagination-active-bg;
+@pagination-disabled-bg: @pagination-bg;
+@pagination-disabled-color: fade(@dark, 30);
+@pagination-hover-bg: @pagination-bg;
+@pagination-hover-color: @dark;
+@pagination-hover-border: @pagination-bg;
+
+
+// Loader
+// -------------------------
+@loader-size: .5em;
+@loader-bg: @positive;
+@loader-margin: .125em;
+@loader-time: .5s;
+@loader-fn: linear;
+@loader-width: 200px;
+@loader-height: 50px;
 
 // Components
 // -------------------------
 // Circle
 @circle-size:       35px;
+@circle-size-small: 20px;
 @circle-size-tall:  100px;
-@circle-size-small: 30px;
 
 //Labels
 @label-success-bg: @green;

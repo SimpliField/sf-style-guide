@@ -17,6 +17,44 @@ Labels
       CIRCLE
 
 ----------------*/
+.circle {
+  .circle();
+
+  &.circle-dark {
+    .circle-style(@dark);
+  }
+  &.circle-light {
+    .circle-style(@light, @stable);
+    border: 1px solid #b2bfcc;
+  }
+  &.circle-positive {
+    .circle-style(@positive);
+  }
+  &.circle-stable {
+    .circle-style(@stable);
+  }
+  &.circle-calm {
+    .circle-style(@calm);
+  }
+  &.circle-balanced {
+    .circle-style(@balanced);
+  }
+  &.circle-assertive {
+    .circle-style(@assertive);
+  }
+  &.circle-gray {
+    .circle-style(@gray);
+  }
+
+  // Size
+  &.circle-tall {
+    .circle(@circle-size-tall);
+  }
+  &.circle-small {
+    .circle(@circle-size-small);
+  }
+}
+
 .circle(@size: @circle-size) {
   height: @size;
   width: @size;
@@ -25,54 +63,7 @@ Labels
   display: inline-block;
   text-align: center;
 }
-.circle {
-  .circle();
-
-  &.circle-dark {
-    background: @dark;
-    color: #FFF;
-  }
-  &.circle-light {
-    background: @light;
-    color: @stable;
-    border: 1px solid #b2bfcc;
-  }
-  &.circle-balanced {
-    background: @balanced;
-    color: #FFF;
-  }
-  &.circle-gray {
-    background: @gray;
-    color: #FFF;
-  }
-  &.circle-positive {
-    background: @positive;
-    color: #FFF;
-  }
-  &.circle-outline-dark {
-    border: 1px solid @dark;
-    color: @dark;
-  }
-  &.circle-darkened {
-    background: rgba(0, 0, 0, 0.2);
-  }
-
-  &.circle-tall {
-    height: @circle-size-tall;
-    width: @circle-size-tall;
-    line-height: @circle-size-tall + 10;
-  }
-
-  &.circle-tall {
-    .circle(@circle-size-tall);
-
-    &.circle-outline-balanced {
-      border: 2px solid @balanced;
-      color: @balanced;
-    }
-  }
-  // Size
-  &.circle-small {
-    .circle(@circle-size-small);
-  }
+.circle-style(@background, @color: @light) {
+  background: @background;
+  color: @color;
 }

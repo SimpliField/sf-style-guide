@@ -9,14 +9,62 @@
   border-width:   @item-border-width;
   border-style:   solid;
   font-size:      @item-font-size;
+
   line-height:    @item-font-size + 4;
   font-weight:    @item-font-weight;
   border-radius:  @item-border-radius;
 
+  h2 {
+    margin: 0 0 @default-padding 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  h3 {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+  }
+  h4 {
+    margin: 0 0 4px 0;
+    font-size: 12px;
+  }
+  h5, h6 {
+    margin: 0 0 3px 0;
+    font-size: 10px;
+  }
+  p {
+    font-size: 14px;
+    margin-bottom: 2px;
+
+    & + p {
+      margin-top: @default-padding;
+    }
+  }
+
+  h2, h3, h4, h5, p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  h1:last-child,
+  h2:last-child,
+  h3:last-child,
+  h4:last-child,
+  h5:last-child,
+  h6:last-child,
+  p:last-child {
+    margin-bottom: 0;
+  }
+
   // Different themes for items
   &.item-light {
+    h2, h3, h4, h5 { color: @item-default-title; }
+
     .item-style(@item-light-bg, @item-light-border, @item-light-text, @item-light-box-shadow);
-    .item-hover-style(@item-light-hover-bg, @item-light-hover-border, @item-light-hover-text);
+
+    &.item-hover {
+      .item-hover-style(@item-light-hover-bg, @item-light-hover-border, @item-light-hover-text);
+    }
   }
   &.item-calm {
     .item-style(@item-calm-bg, @item-calm-border, @item-calm-text, @item-calm-box-shadow);
@@ -49,16 +97,6 @@
     font-size: @font-size-small;
   }
 
-  &[ng-click]:hover {
-    cursor: pointer;
-  }
-
-  h2 {
-    margin: 0 0 2px 0;
-    font-size: 17px;
-    font-weight: 600;
-  }
-
   .item-labels {
     position: absolute;
     top: @item-labels-padding;
@@ -72,27 +110,31 @@
       left: -50px;
       top: 0;
     }
+  }
 
-    .item-label {
-      font-family: @item-label-font-type;
-      font-size:   @item-label-font-size;
-      font-weight: 400;
-      text-transform: uppercase;
-      border-radius: @item-label-border-radius;
-      padding: @item-label-padding;
-      color: @item-label-color;
+  &[ng-click]:hover {
+    cursor: pointer;
+  }
+}
 
-      &.item-label-light {
-        border: 1px solid @positive;
-        color: @positive;
-        background-color: @light;
-      }
-      &.item-label-stable {
-        border: 1px solid @stable;
-        color: @stable;
-        background-color: @background-color;
-      }
-    }
+.item-label {
+  font-family: @item-label-font-type;
+  font-size:   @item-label-font-size;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: @item-label-border-radius;
+  padding: @item-label-padding;
+  color: @item-label-color;
+
+  &.item-label-light {
+    border: 1px solid @positive;
+    color: @positive;
+    background-color: @light;
+  }
+  &.item-label-stable {
+    border: 1px solid @stable;
+    color: @stable;
+    background-color: @background-color;
   }
 }
 
@@ -105,12 +147,19 @@
   padding: 0;
 }
 
-
 .item-input {
   input,
   .range input,
   textarea {
     width: 100%;
+  }
+}
+
+.item-text-wrap {
+  &.item, & .item,
+  & h1, & h2, & h3, & h4, & h5, & h6, & p {
+    overflow: visible;
+    white-space: normal;
   }
 }
 
@@ -139,4 +188,11 @@
   float: right;
   color: @stable;
   font-size: 13px;
+}
+
+// List helper
+.list-shadow .item {
+  border-radius: 2px;
+  border-width: 0;
+  box-shadow: 0px 1px 1px rgba(151, 174, 186, 0.75);
 }
