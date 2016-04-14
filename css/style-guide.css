@@ -1137,7 +1137,7 @@ hr {
   margin-top: 21px;
   margin-bottom: 21px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #beccd9;
 }
 .sr-only {
   position: absolute;
@@ -2558,10 +2558,10 @@ output {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: #6a91b3;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(106, 145, 179, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(106, 145, 179, 0.6);
 }
 .form-control::-moz-placeholder {
   color: #afc2d3;
@@ -6998,6 +6998,13 @@ COLORS
   font-family: 'Avenir';
   src: url('../fonts/avenir/Medium/avenir-Medium.eot?v=1.0.0');
   src: url('../fonts/avenir/Medium/avenir-Medium.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/avenir/Medium/avenir-Medium.woff?v=1.0.0') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/avenir/Medium/avenir-Medium.eot?v=1.0.0');
+  src: url('../fonts/avenir/Medium/avenir-Medium.eot?#iefix&v=1.0.0') format('embedded-opentype'), url('../fonts/avenir/Medium/avenir-Medium.woff?v=1.0.0') format('woff');
   font-weight: 600;
   font-style: normal;
 }
@@ -7159,6 +7166,9 @@ Navigation
 }
 .text-center {
   text-align: center;
+}
+.text-underline {
+  text-decoration: underline;
 }
 .text-uppercase {
   font-size: 12px;
@@ -7571,15 +7581,32 @@ Toggle
   border-color: #beccd9;
   background: #fff;
   padding: 2px;
-  border-radius: 3px;
   box-shadow: 0 1px 0 rgba(207, 218, 228, 0.3);
+  border-radius: 3px;
   font-family: 'Montserrat', sans-serif !important;
 }
+.toggle:before,
+.toggle:after {
+  content: " ";
+  display: table;
+}
+.toggle:after {
+  clear: both;
+}
+.toggle:before,
+.toggle:after {
+  content: " ";
+  display: table;
+}
+.toggle:after {
+  clear: both;
+}
 .toggle .option {
+  width: 50%;
+  float: left;
   max-height: 25px;
   line-height: 25px;
   padding: 0 12px;
-  border-radius: 3px;
   text-transform: uppercase;
   border-width: 0;
   background: initial;
@@ -7589,6 +7616,12 @@ Toggle
 .toggle .option.active {
   background: #3fabc5;
   color: #fff;
+}
+.toggle .option--left {
+  border-radius: 3px 0 0 3px;
+}
+.toggle .option--right {
+  border-radius: 0 3px 3px 0;
 }
 .toggle.toggle-rounded {
   border-radius: 25px;
@@ -8186,6 +8219,15 @@ Additionaly style
 .sf-loader_container {
   text-align: center;
 }
+.bar-dark-bg .sf-loader_container .sf-loader_center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 40px;
+  transform: translateY(50%);
+}
 .sf-loader_container .sf-loader-centering {
   margin-left: -1.3em;
 }
@@ -8240,6 +8282,22 @@ Additionaly style
     transform: translate(2em);
     opacity: 0;
   }
+}
+.dropdown-menu {
+  margin: 0;
+  margin-top: -1px;
+  padding: 0;
+  border-radius: 0;
+}
+.dropdown-menu > li:hover,
+.dropdown-menu > li:focus,
+.dropdown-menu > li:active {
+  color: #8caac4;
+  background-color: #eef2f5;
+  border-bottom-color: #8caac4;
+}
+.dropdown-menu > li > a {
+  padding: 10px 20px;
 }
 .dropdown-menu > li > a:focus {
   outline: none;
@@ -9344,6 +9402,9 @@ Additionaly style
   border: 1px solid #ddd;
   padding: 20px;
   margin: 0;
+}
+.guide_container .copycode {
+  display: none;
 }
 .guide_header {
   position: fixed;
