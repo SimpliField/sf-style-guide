@@ -24,6 +24,11 @@ input[type="color"] {
   box-shadow: @input-box-shadow;
   padding: @input-padding;
   border-radius: @input-border-radius;
+
+  .focus();
+}
+select {
+  .focus();
 }
 
 /* --------------------------------
@@ -121,9 +126,7 @@ select {
   color:            @input-color;
   border-left-width: 0;
 
-  &:focus {
-    border-color: @input-border;
-  }
+  .focus();
 }
 
 /*---------------------
@@ -185,9 +188,8 @@ Toggle
 }
 .yes-no-item {
   .toggle .btn {
-    &:focus {
-      outline: none;
-    }
+    .focus();
+
     &:last-of-type.active {
       background-color: #A7BACB;
     }
@@ -196,5 +198,13 @@ Toggle
   label {
     margin-top: 5px!important;
     width: calc(~"100% - 110px");
+  }
+}
+
+.focus() {
+  &:focus {
+    border-color: @input-border-focus!important;
+    outline: 0;
+    box-shadow: none;
   }
 }
