@@ -82,9 +82,26 @@ COLORS
 // -------------------------
 @header-height               : 50px;
 @header-color                : @bar-back;
+
 // nav
 @nav-height                  : @header-height;
 @font-size-nav               : @font-size-base;
+
+// Inverted navbar
+// Reset inverted navbar basics
+@navbar-inverse-color:                      @stable;
+@navbar-inverse-bg:                         @bar-back;
+@navbar-inverse-border:                     transparent;
+// Inverted navbar links
+@navbar-inverse-link-color:                 @stable;
+@navbar-inverse-link-hover-color:           lighten(@navbar-inverse-link-color, 10%);
+@navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg:             transparent;
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg:            transparent;
+@navbar-inverse-toggle-icon-bar-bg:         @navbar-inverse-link-color;
+@navbar-inverse-toggle-border-color:        @navbar-inverse-link-color;
 
 // Input
 // -------------------------
