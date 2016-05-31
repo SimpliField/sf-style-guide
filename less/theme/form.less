@@ -24,6 +24,11 @@ input[type="color"] {
   box-shadow: @input-box-shadow;
   padding: @input-padding;
   border-radius: @input-border-radius;
+
+  .focus();
+}
+select {
+  .focus();
 }
 
 /* --------------------------------
@@ -73,21 +78,28 @@ select {
     outline : 0;
   }
 }
-
+.addicon(@codeIcon){
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  top: 10px;
+  color: @stable;
+  .icon(@codeIcon);
+}
 .sf_input-select,
 .form-select {
   position: relative;
-  &:before {
-    position: absolute;
-    z-index: 10;
-    right: 10px;
-    top: 10px;
-    color: @stable;
-    .icon('\eA06');
+  &:before{
+    .addicon('\eA06'); // ss-angle-down
   }
 }
-
-.dropdown-toggle {
+.form-asideMenu {
+  position: relative;
+  &:before{
+    .addicon('\e038'); // ss-chevron-right
+  }
+}
+.sf_dropdown-toggle {
   padding:       @dropdown-padding;
 
   border-radius: @dropdown-border-radius;
@@ -114,9 +126,7 @@ select {
   color:            @input-color;
   border-left-width: 0;
 
-  &:focus {
-    border-color: @input-border;
-  }
+  .focus();
 }
 
 /*---------------------
@@ -178,9 +188,8 @@ Toggle
 }
 .yes-no-item {
   .toggle .btn {
-    &:focus {
-      outline: none;
-    }
+    .focus();
+
     &:last-of-type.active {
       background-color: #A7BACB;
     }
@@ -189,5 +198,13 @@ Toggle
   label {
     margin-top: 5px!important;
     width: calc(~"100% - 110px");
+  }
+}
+
+.focus() {
+  &:focus {
+    border-color: @input-border-focus!important;
+    outline: 0;
+    box-shadow: none;
   }
 }

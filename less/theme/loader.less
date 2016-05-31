@@ -1,6 +1,18 @@
 .sf-loader_container {
   text-align: center;
 
+  .bar-dark-bg & { // form builder UI exception(dark background)
+    .sf-loader_center{
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: @light;
+      border-radius: @border-radius-base;
+      padding: 2 * @content-padding;
+      transform: translateY(50%);
+    }
+  }
+
   .sf-loader-centering {
     margin-left: -1.3em;
   }

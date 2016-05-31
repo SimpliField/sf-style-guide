@@ -101,6 +101,7 @@
     position: absolute;
     top: @item-labels-padding;
     right: @item-labels-padding;
+    z-index: 2;
 
     &:before {
       content: '';
@@ -135,6 +136,12 @@
     border: 1px solid @stable;
     color: @stable;
     background-color: @background-color;
+  }
+  &.item-label-assertive {
+    border: 1px solid @assertive;
+    color: @assertive;
+    background-color: @light;
+    display: inline-block;
   }
 }
 
@@ -172,7 +179,7 @@
   .item-labels {
     background-color: @bg-color;
     &:before {
-      background: linear-gradient(90deg, transparent 0%, @bg-color 80%, @bg-color 100%);
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, @bg-color 80%, @bg-color 100%);
     }
   }
 }

@@ -1,0 +1,17 @@
+# .editorconfig file is there to enforce coding style across text editors
+# In order to make it work dont forget to install the matching plugin in your editor
+# http://editorconfig.org/#download
+
+# top-most EditorConfig file
+root = true
+
+# All files
+[*]
+# Unix-style newlines with a newline ending every file
+end_of_line = lf
+insert_final_newline = true
+# Set default charset
+charset = utf-8
+# 4 space indentation
+indent_style = space
+indent_size = 2
