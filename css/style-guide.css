@@ -7455,6 +7455,12 @@ fieldset[disabled] .btn.btn-cancel.active {
 .btn.btn-rounded {
   border-radius: 18px;
 }
+.btn.btn-upper {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif !important;
+  letter-spacing: 1px;
+}
 /*---------------------
 
 Inputs
@@ -7501,8 +7507,6 @@ input[type="color"]:focus {
   outline: 0;
   box-shadow: none;
 }
-input[type="radio"]:focus,
-input[type="checkbox"]:focus,
 select:focus {
   border-color: #6a91b3 !important;
   outline: 0;
@@ -7862,8 +7866,23 @@ Tools
 .sf_table__tools {
   padding-bottom: 20px;
   padding-top: 20px;
-  float: left;
   width: 100%;
+}
+.sf_table__tools:before,
+.sf_table__tools:after {
+  content: " ";
+  display: table;
+}
+.sf_table__tools:after {
+  clear: both;
+}
+.sf_table__tools:before,
+.sf_table__tools:after {
+  content: " ";
+  display: table;
+}
+.sf_table__tools:after {
+  clear: both;
 }
 .sf_table__tools .sf_table__tools-counter {
   margin-top: 12px;
