@@ -101,6 +101,7 @@
     position: absolute;
     top: @item-labels-padding;
     right: @item-labels-padding;
+    z-index: 2;
 
     &:before {
       content: '';
@@ -135,6 +136,12 @@
     border: 1px solid @stable;
     color: @stable;
     background-color: @background-color;
+  }
+  &.item-label-assertive {
+    border: 1px solid @assertive;
+    color: @assertive;
+    background-color: @light;
+    display: inline-block;
   }
 }
 
