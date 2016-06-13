@@ -80,23 +80,25 @@ COLORS
 
 // Header
 // -------------------------
-@header-height               : 50px;
+@header-height               : 55px;
 @header-color                : @bar-back;
 
 // nav
-@nav-height                  : @header-height;
+@navbar-height               : @header-height;
 @font-size-nav               : @font-size-base;
 
+@nav-link-padding:               14px 20px;
+@navbar-underline-border-width:  1px;
 // Inverted navbar
 // Reset inverted navbar basics
-@navbar-inverse-color:                      @stable;
+@navbar-inverse-color:                      #829faf;
 @navbar-inverse-bg:                         @bar-back;
 @navbar-inverse-border:                     transparent;
 // Inverted navbar links
-@navbar-inverse-link-color:                 @stable;
+@navbar-inverse-link-color:                 @navbar-inverse-color;
 @navbar-inverse-link-hover-color:           lighten(@navbar-inverse-link-color, 10%);
 @navbar-inverse-link-hover-bg:              transparent;
-@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-color:          @light;
 @navbar-inverse-link-active-bg:             transparent;
 // Inverted navbar toggle
 @navbar-inverse-toggle-hover-bg:            transparent;
