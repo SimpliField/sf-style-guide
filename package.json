@@ -1,6 +1,6 @@
 {
   "name": "sf-style-guide",
-  "version": "2.8.14",
+  "version": "2.9.0",
   "description": "[View the style guide online](http://simplifield.github.io/sf-style-guide/)",
   "main": "index.js",
   "scripts": {
