@@ -2,7 +2,7 @@
   "name": "sf-style-guide",
   "version": "2.9.3",
   "description": "[View the style guide online](http://simplifield.github.io/sf-style-guide/)",
-  "main": "index.js",
+  "main": "simplifield.less",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lessc less/style-guide.less css/style-guide.css"
