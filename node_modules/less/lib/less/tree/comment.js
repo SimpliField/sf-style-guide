@@ -4,7 +4,9 @@ var Node = require("./node"),
 var Comment = function (value, isLineComment, index, currentFileInfo) {
     this.value = value;
     this.isLineComment = isLineComment;
+    this.index = index;
     this.currentFileInfo = currentFileInfo;
+    this.allowRoot = true;
 };
 Comment.prototype = new Node();
 Comment.prototype.type = "Comment";
