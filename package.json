@@ -1,24 +1,27 @@
-{
-  "name": "sf-style-guide",
-  "version": "2.10.0",
-  "description": "[View the style guide online](http://simplifield.github.io/sf-style-guide/)",
-  "main": "simplifield.less",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lessc less/style-guide.less css/style-guide.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SimpliField/sf-style-guide.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SimpliField/sf-style-guide/issues"
-  },
-  "homepage": "https://github.com/SimpliField/sf-style-guide#readme",
-  "dependencies": {
-    "less": "^2.6.1"
+{ "name": "sf-style-guide"
+, "version": "3.0.0-alpha.1"
+, "description": "Styleguide for SimpliField content"
+, "keywords": ["styleguide"]
+, "homepage": "http://simplifield.github.io/sf-style-guide/"
+, "bugs":
+  { "url": "https://github.com/SimpliField/sf-style-guide/issues"
+  }
+, "license": "ISC"
+, "contributors":
+  [ "Arnaud Spanneut <arnaud.spanneut@simplifield.com>"
+  , "Xavier Haniquaut <xavier.haniquaut@simplifield.com>"
+  ]
+, "main": "dist/sf-style-guide.css"
+, "repository": "SimpliField/sf-style-guide"
+, "scripts":
+  { "test": "npm run build:dev"
+  , "build:dev": "lessc --clean-css index.less dist/sf-style-guide.min.css"
+  , "build:min": "lessc index.less dist/sf-style-guide.css"
+  , "prepublish": "npm run build:dev && npm run build:min"
+  }
+, "devDependencies":
+  { "bootstrap": "^3.3.7"
+  , "less": "^2.7.2"
+  , "less-plugin-clean-css": "^1.5.1"
   }
 }
