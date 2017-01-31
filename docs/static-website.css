@@ -1,3 +1,8 @@
+/*
+  All this css is specific to the github page (http://simplifield.github.io/sf-style-guide/)
+  This is going to be as minismal as it can be.
+*/
+
 .guide_title {
   margin: 5em 0 1em;
   text-align: center;
@@ -13,8 +18,9 @@
   margin: 0;
 }
 
-.guide_container .copycode{
-  display: none;
+.guide_container + pre {
+  border-radius: 0;
+  border-top: 0;
 }
 
 .guide_header {
@@ -26,74 +32,20 @@
   z-index: 10;
 }
 
-.guide_code pre {
-  padding: 10px 20px;
-}
-
 .guide_logo {
   padding: 20px;
   margin-bottom: 0;
 }
 
-.guide_colors-elems {
-  text-align: center;
+.guide_colors {
+  list-style: none;
 }
-
-.guide_colors-elem-color {
+.guide_colorsSquare {
+  text-align: center;
   position: relative;
   width: 100%;
-  padding: 50% 0;
+  padding: 20px 0;
   margin-bottom: 10px;
-  height: 20%;
-}
-
-.guide_colors-elem-color:after,
-.guide_colors-elem-color:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 50%;
-}
-.guide_colors-elem-color:after {
-  right: 0;
-}
-.guide_colors-elem-color:before {
-  left: 0;
-}
-/* TODO: oops
-.guide_colors-elem-color--blue{
-  background-color: @blue;
-}
-.guide_colors-elem-color--green{
-  background-color: @green;
-}
-.guide_colors-elem-color--green:after{
-  background-color: @green-dark;
-}
-.guide_colors-elem-color--red{
-  background-color: @red;
-}
-.guide_colors-elem-color--red:after{
-  background-color: @red-dark;
-}
-.guide_colors-elem-color--yellow{
-  background-color: @royal;
-}
-.guide_colors-elem-color--gray{
-  background-color: @gray;
-}
-.guide_colors-elem-color--gray:after{
-  background-color: @gray-dark;
-}
-*/
-
-.guide_typography-container h1::before,
-.guide_typography-container h2::before,
-.guide_typography-container h3::before,
-.guide_typography-container h4::before,
-.guide_typography-container h5::before {
-  content: 'Aa - ';
-  /*color: @blue;*/
 }
 
 .guide_buttons-icons li {

@@ -1,8 +1,7 @@
-/* --------------------------------
+// TODO: Verify if all those variables are related to the global styles
+// TODO: Verify if bootstrap variable redefinition override the lib ones.
+// TODO: Move simplifield custom components variables inside the component files.
 
-COLORS
-
--------------------------------- */
 @light                       : #fff;
 @stable                      : #6a91b3;
 @positive                    : #3fabc5;
@@ -23,34 +22,28 @@ COLORS
 @bar-back                    : #2e414b;
 @border-color                : #beccd9;
 
-// Old variables
-@blue                        : @positive;
-@green                       : @balanced;
-@green-dark                  : @balanced-dark;
-@red                         : @assertive;
-@red-dark                    : @assertive-dark;
-
-//--------- Bootstrap colors
-@brand-primary               : @blue;
-@brand-success               : @green;
-@brand-danger                : @red;
+// Bootstrap
+@brand-primary               : @positive;
+@brand-success               : @balanced;
+@brand-danger                : @assertive;
 @brand-warning               : @royal;
+
 // Text
 @text-color                  : @dark;
 @state-info-text             : #FFF;
+
 // Background
-@state-success-bg            : @green;
-@state-info-bg               : @blue;
+@state-success-bg            : @balanced;
+@state-info-bg               : @positive;
 @state-warning-bg            : @royal;
 @state-danger-bg             : @assertive;
 
-
 // Fonts
-// -------------------------
 @font-type                   : 'Avenir', sans-serif!important;
 @font-type-second            : 'Montserrat', sans-serif!important;
 @font-family-base            : @font-type;
 @headings-font-weight        : 400;
+
 // Size
 @font-size-h1                : 30px;
 @font-size-h2                : 24px;
@@ -62,20 +55,19 @@ COLORS
 @font-size-large             : @font-size-base;
 
 // Common
-// -------------------------
 @content-padding             : 20px;
 @default-padding             : 10px;
 @box-shadow                  : 0px 1px 1px rgba(151, 174, 186, 0.75);
+
 // Border
 @border-color-base           : @border-color;
 @border-radius-base          : 3px;
 @border-radius-large         : @border-radius-base;
+
 // Padding
 @padding-base-vertical       : 9px;
 
-
 // Header
-// -------------------------
 @header-height               : 55px;
 @header-color                : @bar-back;
 
@@ -85,38 +77,37 @@ COLORS
 
 @nav-link-padding:               14px 20px;
 @navbar-underline-border-width:  1px;
+
 // Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color:                      #829faf;
 @navbar-inverse-bg:                         @bar-back;
 @navbar-inverse-border:                     transparent;
+
 // Inverted navbar links
 @navbar-inverse-link-color:                 @navbar-inverse-color;
 @navbar-inverse-link-hover-color:           lighten(@navbar-inverse-link-color, 10%);
 @navbar-inverse-link-hover-bg:              transparent;
 @navbar-inverse-link-active-color:          @light;
 @navbar-inverse-link-active-bg:             transparent;
+
 // Inverted navbar toggle
 @navbar-inverse-toggle-hover-bg:            transparent;
 @navbar-inverse-toggle-icon-bar-bg:         @navbar-inverse-link-color;
 @navbar-inverse-toggle-border-color:        @navbar-inverse-link-color;
 
 // Input
-// -------------------------
 @input-color-placeholder     : #afc2d3;
 
-
-// Btn
-// -------------------------
+// Buttons
 @btn-height                  : 36px;
 @btn-padding                 : 6px @content-padding;
-@btn-primary-border          : @blue;
+@btn-primary-border          : @positive;
 @btn-success-border          : @brand-success;
 @btn-danger-border           : @brand-danger;
 @btn-large-padding           : 13px;
 
-// Item
-// -------------------------
+// Items
 @item-font-size              : 15px;
 @item-border-width           : 1px;
 @item-font-weight            : 400;
@@ -128,13 +119,15 @@ COLORS
 @item-small-padding          : @item-padding - 4;
 @item-small-font-size        : 14px;
 @item-default-title          : @dark;
-// Item label
+
+// Item labels
 @item-label-padding          : 2px 10px;
 @item-label-font-size        : 10px;
 @item-label-border-radius    : @item-border-radius;
 @item-label-color            : @light;
 @item-label-font-type        : @font-type-second;
-// Colors
+
+// items colors
 @item-default-box-shadow     : none;
 @item-default-bg             : transparent;
 @item-default-border         : @border-color;
@@ -164,29 +157,23 @@ COLORS
 @item-balanced-box-shadow    : 0 1px 0 rgba(21, 130, 156, 0.2);
 
 // List
-// -------------------------
 @list-group-border           : @border-color;
 
 // Separators
-// -------------------------
 @hr-border                   : @border-color-base;
 
 // Box
-// -------------------------
 @box-border-radius           : 2px;
 @box-margin                  : 10px;
 @box-padding                 : @content-padding;
 
 // Empty
-// -------------------------
 @empty-icon-size             : 45px;
 @empty-badge-height          : 20px;
 @empty-title-margin          : @content-padding + 10;
 @empty-bottom-margin         : @content-padding;
 
-// Input
-// -------------------------------
-// Size
+// Inputs
 @input-height-base           : 40px;
 @input-bg                    : #f3f6f9;
 @input-border                : 1px solid @border-color;
@@ -195,6 +182,7 @@ COLORS
 @input-padding               : @item-padding;
 @input-border-radius         : @item-border-radius;
 @input-box-shadow            : inset 0 1px 1px rgba(166, 183, 199, 0.5);
+
 // Range
 @toggle-handle-off-bg-color  : @light;
 @range-track-height          : 2px;
@@ -204,33 +192,40 @@ COLORS
 @range-icon-size             : 24px;
 @range-slider-box-shadow     : 0 0 2px rgba(0,0,0,.3);
 @range-default-track-bg      : #ccc;
+
 // Toggle
 @toggle-height               : 25px;
 @toggle-padding              : 2px;
 @toggle-option-padding       : 12px;
 @toggle-font-size            : 11px;
 @toggle-border-radius        : 3px;
+
 // Small
 @toggle-small-height         : 24px;
 @toggle-small-padding        : 1px;
 @toggle-small-option-padding : 0 10px;
 @toggle-small-font-size      : 12px;
+
 // Rounded
 @toggle-rounded-border-radius: @toggle-height;
+
 // Colors
 @toggle-default-bg           : @light;
 @toggle-default-color        : @stable;
 @toggle-default-border-color : @border-color;
 @toggle-default-active-color : @light;
 @toggle-default-active-bg    : @positive;
-// State
+
+// States
 @state-danger-text           : @assertive;
 @state-danger-border         : @assertive;
 @state-success-text          : @balanced;
 @state-success-border        : @balanced;
-// Addon
+
+// Addons
 @input-group-addon-bg        : @input-bg;
-// Dropdown
+
+// Dropdowns
 @dropdown-padding            : 8px (@content-padding * 2) 8px @content-padding;
 @dropdown-bg                 : @light;
 @dropdown-color              : @stable;
@@ -241,29 +236,33 @@ COLORS
 @dropdown-font-weight        : @item-font-weight;
 @dropdown-link-hover-bg      : inherit;
 
-
 // Table
-// -------------------------
 @table-bg                    : @light;
 @table-border-color          : @border-color-base;
 @table-box-shadow            : @box-shadow;
 @table-border-radius         : @border-radius-base;
+
 // head
 @table-head-bg               : #E0E7EC;
 @table-head-color            : @stable;
 @table-head-height           : 35px;
 @table-head-padding          : 5px 10px;
 @table-head-font-size        : 13px;
+
 // Cell
 @table-cell-bg               : @background-color;
 @table-cell-height           : @table-head-height + 15px;
 @table-cell-padding          : 10px;
 @table-cell-hover-bg         : @positive;
 @table-cell-hover-color      : @light;
+
 // Footer
+
 @table-footer-height         : @table-head-height + 5px;
+
 // Tools
 @tools-padding               : @content-padding;
+
 // Pagination
 @pagination-bg               : transparent;
 @pagination-color            : fade(@dark, 60);
@@ -280,9 +279,7 @@ COLORS
 @pagination-hover-color      : @dark;
 @pagination-hover-border     : @pagination-bg;
 
-
 // Loader
-// -------------------------
 @loader-size                 : .5em;
 @loader-bg                   : @positive;
 @loader-margin               : .125em;
@@ -291,18 +288,16 @@ COLORS
 @loader-width                : 200px;
 @loader-height               : 50px;
 
-// Components
-// -------------------------
 // Circle
 @circle-size                 : 35px;
 @circle-size-small           : 20px;
 @circle-size-tall            : 100px;
 
 //Labels
-@label-success-bg            : @green;
-@label-info-bg               : @blue;
+@label-success-bg            : @balanced;
+@label-info-bg               : @positive;
 @label-warning-bg            : @royal;
-@label-danger-bg             : @red;
+@label-danger-bg             : @assertive;
 @label-border-radius         : 3px;
 
 // Badge

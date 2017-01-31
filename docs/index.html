@@ -56,29 +56,21 @@
 
       </section>
 
-      <section id="colors" class="guide_colors row">
+      <section id="colors" class="row">
         <h2 class="guide_subtitle col-sm-12">Colors</h2>
 
-        <ul class="guide_colors-elems">
-          <li class="guide_colors-elem col-sm-2">
-            <div class="guide_colors-elem-color guide_colors-elem-color--blue"></div>
-          </li>
-
-          <li class="guide_colors-elem col-sm-2">
-            <div class="guide_colors-elem-color guide_colors-elem-color--green"></div>
-          </li>
-
-          <li class="guide_colors-elem col-sm-2">
-            <div class="guide_colors-elem-color guide_colors-elem-color--red"></div>
-          </li>
-
-          <li class="guide_colors-elem col-sm-2">
-            <div class="guide_colors-elem-color guide_colors-elem-color--yellow"></div>
-          </li>
-
-          <li class="guide_colors-elem col-sm-2">
-            <div class="guide_colors-elem-color guide_colors-elem-color--gray"></div>
-          </li>
+        <ul class="guide_colors ">
+          <li class="col-sm-2 guide_colorsSquare positive-bg">.positive-bg</li>
+          <li class="col-sm-2 guide_colorsSquare balanced-bg">.balanced-bg</li>
+          <li class="col-sm-2 guide_colorsSquare assertive-bg">.assertive-bg</li>
+          <li class="col-sm-2 guide_colorsSquare royal-bg">.royal-bg</li>
+          <li class="col-sm-2 guide_colorsSquare calm-bg">.calm-bg</li>
+        </ul>
+        <ul class="guide_colors">
+          <li class="col-sm-2 guide_colorsSquare stable-bg">.stable-bg</li>
+          <li class="col-sm-2 guide_colorsSquare energized-bg">.energized-bg</li>
+          <li class="col-sm-2 guide_colorsSquare dark-bg light">.dark-bg</li>
+          <li class="col-sm-2 guide_colorsSquare back-bg">.back-bg</li>
         </ul>
       </section>
 
@@ -86,13 +78,19 @@
         <h2 class="guide_subtitle col-sm-12">Typography</h2>
 
         <div class="col-sm-12">
-          <div class="guide_container guide_typography-container">
-            <h1>Heading, <span></span></h1>
-            <h2>SubTitle, <span></span></h2>
-            <h3>SubSubTitle, <span></span></h3>
-            <h4>h4, <span></span></h4>
-            <h5>h5, <span></span></h5>
-            <p>Aa - <span></span>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate distinctio reprehenderit, autem deleniti ad <a href="#0">voluptatum eaque</a>. Optio ea aperiam nisi distinctio nemo repellat, voluptate fugiat. Quidem neque illum, blanditiis!</p>
+          <div class="guide_container guide_typography-container back-bg">
+            <h1>Heading with h1 tags</h1>
+            <h2>SubTitle with h2 tags</h2>
+            <h3>SubSubTitle with h3 tags</h3>
+            <h4>h4 are rendered like this.</h4>
+            <h5>h5 are rendered like that.</h5>
+            <p>
+              This is a p paragraph with some lorem iside.
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+              voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+              occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
+              mollitia animi, id est laborum et dolorum fuga.
+            </p>
           </div>
         </div>
       </section>
@@ -114,37 +112,31 @@
                 </div>
               </div>
             </div>
-            <div class="copycode">
-              <sf-loader></sf-loader>
-            </div>
-          </div>
-          <div class="guide_code">
-            <pre>
-              <code class="language-html" data-lang="html"></code>
-            </pre>
           </div>
         </div>
+        <pre>
+          &lt;sf-loader&gt;&lt;/sf-loader&gt;</pre>
+
+
       </section>
 
       <section id="buttons" class="guide_buttons row">
-        <h2 class="guide_subtitle col-sm-12">Buttons</h2>
+        <h2 class="guide_subtitle">Buttons</h2>
 
         <div class="col-sm-12">
-          <div class="guide_container guide_buttons-container">
+          <div class="guide_container guide_buttons-container back-bg">
             <div class="guide_buttons-buttons">
               <button class="btn btn-default">Normal button</button>
               <button class="btn btn-lg btn-default">Large button</button>
             </div>
           </div>
-          <div class="guide_code">
-            <pre>
-              <code class="language-html" data-lang="html">
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Normal<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-default"</span><span class="nt">&gt;</span>Large<span class="nt">&lt;/button&gt;</span>
-              </code>
-            </pre>
-          </div>
-          <div class="guide_container guide_buttons-container">
+          <pre>
+&lt;button class="btn btn-default"&gt;Normal&lt;/button&gt;
+&lt;button class="btn btn-lg btn-default"&gt;Large&lt;/button&gt;</pre>
+        </div>
+
+        <div class="col-sm-12">
+          <div class="guide_container guide_buttons-container back-bg">
             <div class="guide_buttons-buttons">
               <button class="btn btn-primary">Primary</button>
               <button class="btn btn-success">Success</button>
@@ -155,24 +147,21 @@
               <button class="btn btn-primary btn-upper">Upper</button>
             </div>
           </div>
-          <div class="guide_code">
-            <pre>
-              <code class="language-html" data-lang="html">
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-rounded"</span><span class="nt">&gt;</span>Rounded<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-outline"</span><span class="nt">&gt;</span>Outline<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>link button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-cancel"</span><span class="nt">&gt;</span>Cancel<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-upper"</span><span class="nt">&gt;</span>Upper<span class="nt">&lt;/button&gt;</span>
-              </code>
-            </pre>
-          </div>
+          <pre>
+            <code class="language-html" data-lang="html">
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button class="btn btn-primary btn-rounded"&gt;Rounded&lt;/button&gt;
+&lt;button class="btn btn-outline"&gt;Outline&lt;/button&gt;
+&lt;button class="btn btn-link"&gt;link button&lt;/button&gt;
+&lt;button class="btn btn-cancel"&gt;Cancel&lt;/button&gt;
+&lt;button class="btn btn-primary btn-upper"&gt;Upper&lt;/button&gt;
+            </code></pre>
         </div>
 
       </section>
 
-      <section id="icons" class="guide_icons">
+      <section id="icons" class="guide_icons row">
         <h2 class="guide_subtitle">Icons</h2>
 
         <ul class="guide_container guide_buttons-icons">
@@ -426,20 +415,15 @@
             <div><i class="ss-bolt"></i></div><span>.ss-bolt</span>
           </li>
         </ul>
-        <div class="guide_code">
           <pre>
-            <code class="language-html" data-lang="html">
-<span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ss-help"</span><span class="nt">&gt;</span><span class="nt">&lt;/i&gt;</span>
-            </code>
-          </pre>
-        </div>
+&lt;i class="ss-help"&gt;&lt;/i&gt;</pre>
       </section>
 
       <section id="form" class="guide_form row">
         <h2 class="guide_subtitle col-sm-12">Form</h2>
 
         <div class="col-sm-12">
-          <div class="guide_container guide_form-container row copycode">
+          <div class="guide_container guide_form-container row">
             <form class="form-horizontal">
               <p class="text-danger text-center">An error has occurred</p>
               <div class="form-group">
@@ -512,46 +496,13 @@
               <button type="submit" class="btn btn-primary pull-right">Submit</button>
             </form>
           </div>
-          <div class="guide_code">
-            <pre>
-              <code class="language-html" data-lang="html">
-              </code>
-            </pre>
-          </div>
         </div>
       </section>
 
-      <section id="tables" class="guide_table">
+      <section id="tables" class="guide_table row">
         <h2 class="guide_subtitle">Tables</h2>
 
-        <div class="guide_container guide_table-container back-bg copycode">
-          <div class="sf_table__tools">
-            <ul class="pagination">
-              <li class="pagination-prev disabled"><a href="">&lt;</a></li>
-              <li class="pagination-page active"><a href="">1</a></li>
-              <li class="pagination-page"><a href="">2</a></li>
-              <li class="pagination-next"><a href="">&gt;</a></li>
-            </ul>
-
-            <span class="pull-right stable sf_table__tools-counter">1 - 10 / 100</span>
-
-            <div class="pull-left">
-              <div class="dropdown-toggle form-select">
-                Colonnes
-              </div>
-
-              <ul class="dropdown-menu">
-                <li class="sf_table__columnPickerItem">
-                  <label for="FORM_FIRST_NAME_HEADER" title="Titre">First Name</label>
-                  <input type="checkbox" id="FORM_FIRST_NAME_HEADER" class="sf_table__columnPickerItemCheckbox">
-                </li>
-                <li class="sf_table__columnPickerItem">
-                  <label for="FORM_LAST_NAME_HEADER" title="Titre">Last Name</label>
-                  <input type="checkbox" id="FORM_LAST_NAME_HEADER" class="sf_table__columnPickerItemCheckbox">
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="guide_container guide_table-container back-bg">
           <table class="table table-hover">
             <thead>
               <tr>
@@ -606,18 +557,12 @@
             </tfoot>
           </table>
         </div>
-        <div class="guide_code">
-          <pre>
-            <code class="language-html" data-lang="html">
-            </code>
-          </pre>
-        </div>
       </section>
 
-      <section id="items" class="guide_table">
+      <section id="items" class="guide_items row">
         <h2 class="guide_subtitle">Items</h2>
 
-        <div class="guide_container guide_table-container back-bg copycode">
+        <div class="guide_container guide_table-container back-bg">
           <div class="item item-light">
             <h2>Alex terrieur</h2>
             <h3>alex@terrieur.com</h3>
@@ -644,15 +589,9 @@
             </div>
           </div>
         </div>
-        <div class="guide_code">
-          <pre>
-            <code class="language-html" data-lang="html">
-            </code>
-          </pre>
-        </div>
       </section>
 
-      <section id="empty" class="guide_empty">
+      <section id="empty" class="guide_empty row">
         <h2 class="guide_subtitle">Empty</h2>
 
         <div class="guide_container guide_empty-container back-bg">
@@ -671,23 +610,16 @@
               Add an widget
             </button>
           </div>
-          <div class="copycode">
-            <sf-empty
-              strings="vm.emptyStrings.noData"
-              icon="'ss-clipboard'"
-              button-action="vm.add">
-            </sf-empty>
-          </div>
         </div>
-        <div class="guide_code">
-          <pre>
-            <code class="language-html" data-lang="html">
-            </code>
-          </pre>
-        </div>
+        <pre>
+&lt;sf-empty
+  strings="vm.emptyStrings.noData"
+  icon="'ss-clipboard'"
+  button-action="vm.add"&gt;
+&lt;/sf-empty&gt;</pre>
       </section>
 
-      <section id="error" class="guide_error">
+      <section id="error" class="guide_error row">
         <h2 class="guide_subtitle">Error</h2>
 
         <div class="guide_container guide_error-container back-bg">
@@ -703,16 +635,9 @@
               Connection problem, please try again later.
             </p>
           </div>
-          <div class="copycode">
-            <sf-backend-error></sf-backend-error>
-          </div>
         </div>
-        <div class="guide_code">
-          <pre>
-            <code class="language-html" data-lang="html">
-            </code>
-          </pre>
-        </div>
+        <pre>
+&lt;sf-backend-error&gt;&lt;/sf-backend-error&gt;</pre>
       </section>
     </div>
   </main>
