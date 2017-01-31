@@ -7438,6 +7438,40 @@ COLORS
   -moz-osx-font-smoothing: grayscale;
   content: '\eB06';
 }
+/* --------------------------------
+
+Navigation
+
+-------------------------------- */
+.sf_header {
+  height: 55px;
+  font-size: 15px;
+  background-color: #2e414b;
+}
+.sf_header-organisation {
+  float: left;
+  display: inline-block;
+  color: #FFF;
+  padding: 0 40px 0 10px;
+  line-height: 55px;
+}
+.sf_header-nav {
+  display: inline-block;
+}
+.sf_header-nav .sf_header-nav-elems {
+  display: table;
+  height: 55px;
+  padding: 0 2em;
+  text-align: left;
+}
+.sf_header-nav .sf_header-nav-elems .sf_header-nav-elem {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 1em;
+}
+.sf_header-nav .sf_header-nav-elems .sf_header-nav-elem a {
+  color: #FFF;
+}
 h1,
 h2,
 h3 {
