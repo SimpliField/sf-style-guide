@@ -1,0 +1,14 @@
+<div class="sf-progress">
+  <div class="sf-progress-counter">
+    {{ (100 * $ctrl.val / $ctrl.max).toFixed(2) + '%'}}
+  </div>
+
+  <div class="sf-progress-bar"
+    ng-class="$ctrl.progressClass"
+    uib-tooltip="{{ $ctrl.val + '/' + $ctrl.max }}">
+    <div class="inner"
+      ng-class="$ctrl.progressClass"
+      ng-style="{ width: 'calc(' +(100 * $ctrl.val / $ctrl.max) + '% + 1px)' }">
+    </div>
+  </div>
+</div>

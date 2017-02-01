@@ -1,0 +1,39 @@
+@progress-bar-color-hover: @light;
+@progress-bar-height: 8px;
+@progress-counter-fontsize: @font-size-small;
+
+.sf-progress {
+  .clearfix;
+}
+
+.sf-progress-bar {
+  overflow: hidden;
+  border-radius: @progress-bar-height / 2;
+  height: @progress-bar-height;
+  border: 1px solid @progress-bar-color;
+  .table tbody tr:hover & { // hover state in tables
+    border-color: @progress-bar-color-hover;
+  }
+  &.full { border-color: @balanced; }
+  &.half { border-color: @royal; }
+  &.beggining { border-color: @calm; }
+
+  .inner{
+    border-top-left-radius: @progress-bar-height / 2;
+    border-bottom-left-radius: @progress-bar-height / 2;
+    height: @progress-bar-height;
+    margin-left: -1px; // TODO: border radius pb -> see template
+    background-color: @progress-bar-color;
+    .table tbody tr:hover & { // hover state in tables
+      background-color: @progress-bar-color-hover;
+    }
+    &.full { background-color: @balanced; }
+    &.half { background-color: @royal; }
+    &.beggining{ background-color: @calm; }
+  }
+}
+
+.sf-progress-counter {
+  text-align: right;
+  font-size: @progress-counter-fontsize;
+}
