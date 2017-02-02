@@ -8646,3 +8646,107 @@ Tools
   float: right;
   margin: 5px 0;
 }
+.sf_kpi {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #beccd9;
+  border-radius: 3px;
+}
+.sf_kpi__number,
+.sf_kpi__label {
+  margin: 0;
+}
+.sf_kpi__number {
+  font-size: 20px;
+  font-weight: 600;
+}
+.sf_oauthBtn {
+  margin-top: 20px;
+  white-space: nowrap;
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.05);
+  transition-property: background-color, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  background: white;
+  color: #737373;
+}
+.sf_oauthBtn:focus,
+.sf_oauthBtn:hover {
+  box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.1);
+}
+.sf_oauthBtn:active {
+  background-color: #e5e5e5;
+  box-shadow: none;
+  transition-duration: 10ms;
+}
+.sf_oauthBtn__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+.sf_oauthBtn__text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.sf-progress:before,
+.sf-progress:after {
+  content: " ";
+  display: table;
+}
+.sf-progress:after {
+  clear: both;
+}
+.sf-progress:before,
+.sf-progress:after {
+  content: " ";
+  display: table;
+}
+.sf-progress:after {
+  clear: both;
+}
+.sf-progress-bar {
+  overflow: hidden;
+  border-radius: 4px;
+  height: 8px;
+  border: 1px solid #fff;
+}
+.table tbody tr:hover .sf-progress-bar {
+  border-color: #fff;
+}
+.sf-progress-bar.full {
+  border-color: #6cb21b;
+}
+.sf-progress-bar.half {
+  border-color: #F89C04;
+}
+.sf-progress-bar.beggining {
+  border-color: #92b2c0;
+}
+.sf-progress-bar .inner {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  height: 8px;
+  margin-left: -1px;
+  background-color: #fff;
+}
+.table tbody tr:hover .sf-progress-bar .inner {
+  background-color: #fff;
+}
+.sf-progress-bar .inner.full {
+  background-color: #6cb21b;
+}
+.sf-progress-bar .inner.half {
+  background-color: #F89C04;
+}
+.sf-progress-bar .inner.beggining {
+  background-color: #92b2c0;
+}
+.sf-progress-counter {
+  text-align: right;
+  font-size: 12px;
+}

@@ -1,4 +1,4 @@
-import angular from 'angular';
+// import angular from 'angular';
 import avatarComponent from './avatar.component';
 
 const Avatar = angular

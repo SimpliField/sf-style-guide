@@ -1,4 +1,4 @@
-import angular from 'angular';
+// import angular from 'angular';
 import kpiConfig from './kpi.component';
 
 const Kpi = angular
