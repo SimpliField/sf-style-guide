@@ -8,10 +8,10 @@ export default class OauthController {
   }
 
   goToAuthPage() {
-    // if redirection is not set callbackUrl is the page origin page
-    const callbackUrl = 'samePage' === this.redirection ?
-      `?url=${encodeURIComponent(this.$window.location.href)}` : '';
-
-    this.$window.location.href = `api/v3/oauth/${this.service}${callbackUrl}`;
+    this.$window.location.href = [
+      endpoint,
+      'samePage' === this.redirection ? // if redirection is not set callbackUrl is the page origin page
+        `?url=${encodeURIComponent(this.$window.location.href)}` : ''
+    ].join('');
   }
 }

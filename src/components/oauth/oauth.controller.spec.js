@@ -9,6 +9,7 @@ let ctrl;
 describe('OauthController{}', () => {
   beforeEach(() => {
     ctrl = new OauthController(...mocks);
+    ctrl.endpoint = 'api/v3/oauth/google';
     ctrl.service = 'google';
     ctrl.label = 'label';
   });
