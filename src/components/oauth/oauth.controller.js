@@ -9,7 +9,7 @@ export default class OauthController {
 
   goToAuthPage() {
     this.$window.location.href = [
-      endpoint,
+      this.endpoint,
       'samePage' === this.redirection ? // if redirection is not set callbackUrl is the page origin page
         `?url=${encodeURIComponent(this.$window.location.href)}` : ''
     ].join('');
