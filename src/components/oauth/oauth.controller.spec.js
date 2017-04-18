@@ -33,6 +33,15 @@ describe('OauthController{}', () => {
             .equal('api/v3/oauth/google');
         });
       });
+
+      describe('with a custom endpoint', () => {
+        it('should set the url', () => {
+          ctrl.endpoint = 'api/v0/oauth/salesforce';
+          ctrl.goToAuthPage();
+          expect(ctrl.$window.location.href)
+            .equal('api/v0/oauth/salesforce');
+        });
+      });
     });
   });
 });
