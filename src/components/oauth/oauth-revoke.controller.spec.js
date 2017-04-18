@@ -23,8 +23,8 @@ describe('OauthRevokeController{}', () => {
     describe('revokeToken()', () => {
       it('should make the good calls', () =>
         ctrl.revokeToken().then(() => {
-          expect(revokeOAuth).calledWith('google');
-          expect(go).calledWith('index.dashboard', { reload: true });
+          expect(revokeOAuth.calledWith('google'));
+          expect(go.calledWith('index.dashboard', { reload: true }));
         })
       );
     });
