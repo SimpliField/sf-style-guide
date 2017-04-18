@@ -2,6 +2,7 @@ NODE_MODULES=node_modules/
 
 test: $(addprefix ${NODE_MODULES}, jest babel-jest chai babel-preset-es2015 sinon q) src/
 	./${NODE_MODULES}.bin/jest -c jest.config.json
+	$(MAKE) clean
 	
 # Babel sucks
 src/:
@@ -12,6 +13,6 @@ ${NODE_MODULES}%:
 
 clean:
 	rm -rf ${NODE_MODULES}
-	rm src
+	rm -rf src
 
 .PHONY: src/ clean
