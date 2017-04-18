@@ -16,7 +16,7 @@ describe('OauthController{}', () => {
 
   describe('methods', () => {
     describe('goToAuthPage()', () => {
-      context('samePage redirection', () => {
+      describe('samePage redirection', () => {
         it('should set the url', () => {
           ctrl.redirection = 'samePage';
           ctrl.goToAuthPage();
@@ -25,7 +25,7 @@ describe('OauthController{}', () => {
         });
       });
 
-      context('not samePage redirection', () => {
+      describe('not samePage redirection', () => {
         it('should set the url', () => {
           ctrl.redirection = 'nooo';
           ctrl.goToAuthPage();
