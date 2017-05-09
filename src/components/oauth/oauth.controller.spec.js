@@ -30,7 +30,7 @@ describe('OauthController{}', () => {
           ctrl.redirection = 'nooo';
           ctrl.goToAuthPage();
           expect(ctrl.$window.location.href)
-            .equal('api/v3/oauth/google');
+            .equal('api/v3/oauth/google?url=nooo');
         });
       });
 
